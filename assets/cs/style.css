@@ -1,0 +1,10 @@
+body header nav {
+    padding-top: 10px;
+    border-bottom: 5px;
+    margin-inline-start: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: space-between;
+    align-items: center;
+    a:hover{ background-color:rgb(6, 59, 6);}
+}
+
