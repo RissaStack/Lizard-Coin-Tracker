@@ -18,14 +18,14 @@ h1 {
     text-shadow: 5cm;
 }
 
-.nav-bar {
+.navbar {
     padding-top: 15px;
     padding-bottom: 30px;
     font-weight: 700;
-    font-size: 300%;
+    background-color:yellowgreen;
 }
 
-.nav-item:hover {
+.nav:hover {
     background-color:yellowgreen;
   }
 
