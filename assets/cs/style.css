@@ -1,21 +1,33 @@
-h1 {
-    padding-top: 30px;
-    font-weight: 700;
-    font-size: 500%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: oblique;
-    text-shadow: 5cm;
+.title {
+  display: inline-block;
+  background-color: yellowgreen;
+
 }
 
-.nav-bar {
+.title img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 165px;
+}
+
+h1 {
+  background-color: yellowgreen;
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 450%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
     padding-top: 15px;
     padding-bottom: 30px;
     font-weight: 700;
-    font-size: 300%;
+    font-size: 200%;
+    background-color:yellowgreen;
 }
 
-.nav-item:hover {
-    background-color:rgb(90, 250, 90);
+.nav-bar:hover {
+    background-color:yellowgreen;
   }
 
 
