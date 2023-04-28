@@ -1,7 +1,18 @@
+.title {
+  display: inline-block;
+  background-color: yellowgreen;
+}
+
+.title img {
+  display: inline-block;
+  vertical-align: middle;
+}
 h1 {
+  background-color: yellowgreen;
+  padding: 20px;
     padding-top: 30px;
     font-weight: 700;
-    font-size: 500%;
+    font-size: 700%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: oblique;
     text-shadow: 5cm;
@@ -15,7 +26,7 @@ h1 {
 }
 
 .nav-item:hover {
-    background-color:rgb(90, 250, 90);
+    background-color:yellowgreen;
   }
 
 
