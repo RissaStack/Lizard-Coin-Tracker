@@ -22,12 +22,20 @@ h1 {
     padding-top: 15px;
     padding-bottom: 30px;
     font-weight: 700;
-    font-size: 200%;
+    font-size: 35px;
     background-color:yellowgreen;
 }
 
-.nav-bar:hover {
-    background-color:yellowgreen;
-  }
+.navbar-brand {
+  font-size: 35px;
+}
 
-
+.navbar-nav {
+  display: flex;
+}
+ul {
+  margin-left: 200px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
