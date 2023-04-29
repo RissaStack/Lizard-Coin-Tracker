@@ -2,7 +2,6 @@
     height: 80px;
 }
 
-
 /* Navbar */
 .navbar-nav li a {
     font-size: 30px;
@@ -31,47 +30,54 @@ nav.navbar {
 
 /* Section One */
 #explore {
-  text-align: center;
-  border-bottom: 1px solid grey;
-  padding-top: 30px;
-  padding-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .ui-widget input::placeholder {
-  text-align: center;
+    text-align: center;
 }
 
 .ui-widget input {
-  padding: 10px 90px;
+    padding: 10px 90px;
 }
 
 .ui-widget input {
-  border-radius: 20%;
+    border-radius: 20%;
 }
 
 .result {
-  font-size: 17px;
+    font-size: 17px;
 }
 
 /* Section Two */
 .section-two {
-  display: flex;
-  flex-wrap: wrap;
-  border-bottom: 1px solid grey;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid grey;
 }
 
 .side-info {
-  width: 40%;
-  padding: 20px;
-  text-align: center; /* centering the contents of side-info */
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-info h3 {
+    text-align: center;
 }
 
 .cards {
-  width: 60%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 #card-item-1,
@@ -80,61 +86,57 @@ nav.navbar {
 #card-item-4,
 #card-item-5,
 #card-item-6 {
-  width: calc(33.33% - 20px);
-  margin-bottom: 20px;
-  height: 200px;
-  background-color: #f1f1f1;
-  border-radius: 10px;
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    height: 200px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
 }
 
-.see-more-coins {
-  margin-top: 20px; /* add some space between h3 and the button */
-  text-align: center; /* center the button */
-}
+@media (min-width: 992px) and (max-width: 1600px) {
+    .cards {
+        width: 60%;
+    }
 
-@media (min-width: 992px) and (max-width: 1400px) {
-  .cards {
-    width: 60%;
-  }
-  
-  #card-item-1,
-  #card-item-2,
-  #card-item-3,
-  #card-item-4,
-  #card-item-5,
-  #card-item-6 {
-    width: calc(50% - 20px);
-    margin-right: 20px;
-  }
-  
-  #card-item-2,
-  #card-item-4,
-  #card-item-6 {
-    margin-right: 0;
-  }
+    #card-item-1,
+    #card-item-2,
+    #card-item-3,
+    #card-item-4,
+    #card-item-5,
+    #card-item-6 {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+    }
+
+    #card-item-2,
+    #card-item-4,
+    #card-item-6 {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 992px) {
   .section-two {
-    flex-direction: column;
+      flex-direction: column;
   }
-  
+
   .cards {
-    width: 100%;
+      width: 60%;
+      margin: 0 auto;
   }
 
   .side-info {
-    width: 100%;
+      width: 100%;
   }
-  
+
   #card-item-1,
   #card-item-2,
   #card-item-3,
   #card-item-4,
   #card-item-5,
   #card-item-6 {
-    width: calc(100% - 20px);
-    margin-bottom: 20px;
-    margin-right: 0;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-right: 0;
   }
 }
