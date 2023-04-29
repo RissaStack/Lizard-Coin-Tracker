@@ -36,3 +36,99 @@ nav.navbar {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.ui-widget input::placeholder {
+  text-align: center;
+}
+
+.ui-widget input {
+  padding: 10px 90px;
+}
+
+.ui-widget input {
+  border-radius: 20%;
+}
+
+.result {
+  font-size: 17px;
+}
+
+/* Section Two */
+.section-two {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid grey;
+}
+
+.side-info {
+  width: 40%;
+  padding: 20px;
+}
+
+.cards {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#card-item-1,
+#card-item-2,
+#card-item-3,
+#card-item-4,
+#card-item-5,
+#card-item-6 {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  height: 200px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .cards {
+    width: 60%;
+  }
+  
+  #card-item-1,
+  #card-item-2,
+  #card-item-3,
+  #card-item-4,
+  #card-item-5,
+  #card-item-6 {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+  }
+  
+  #card-item-2,
+  #card-item-4,
+  #card-item-6 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-two {
+    flex-direction: column;
+  }
+  
+  .cards {
+    width: 100%;
+  }
+
+  .side-info {
+    width: 100%;
+  }
+  
+  #card-item-1,
+  #card-item-2,
+  #card-item-3,
+  #card-item-4,
+  #card-item-5,
+  #card-item-6 {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
