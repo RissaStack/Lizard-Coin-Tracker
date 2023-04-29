@@ -63,6 +63,7 @@ nav.navbar {
 .side-info {
   width: 40%;
   padding: 20px;
+  text-align: center; /* centering the contents of side-info */
 }
 
 .cards {
@@ -84,6 +85,11 @@ nav.navbar {
   height: 200px;
   background-color: #f1f1f1;
   border-radius: 10px;
+}
+
+.see-more-coins {
+  margin-top: 20px; /* add some space between h3 and the button */
+  text-align: center; /* center the button */
 }
 
 @media (min-width: 992px) and (max-width: 1400px) {
