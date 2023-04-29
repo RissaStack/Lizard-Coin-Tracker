@@ -1,135 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/cs/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
-    />
-    <!-- <link rel="stylesheet" href="/resources/demos/style.css" /> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  </head>
-  <body>
-    <header>
-      <h1 class="title w-100">
-        <img src="./assets/images/logo.png" alt="Lizard Coin Logo image" />
-        Lizard Coin Tracker
-      </h1>
-      <!-- <nav class="nav-bar" class="nav-bar">
-        <a class="nav-item" class="nav-item"> Crypto Currencies </a>
-        <a class="nav-item" class="nav-item"> Watch List </a>
-        <a class="nav-item" class="nav-item"> Learn More </a>
-      </nav> -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Lizard Coin Tracker</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Crypto Currencies
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Watch List</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Learn More</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <section class="section-one">
-      <!--Top section under the navbar -->
-      <div class="explore">
-        <h2>Explore the cryptoeconomy!</h2>
-        <div class="ui-widget">
-          <label for="tags">Tags: </label>
-          <input id="tags" />
-        </div>
-      </div>
-    </section>
-    <section class="section-two">
-      <!--Second section-->
-      <h3>Explore top Cryptos like Bitcoin, Ethereum, and Dogecoin.</h3>
-      <button>
-        <!--This button will take you to the cryptocurrencies-->
-        See More Coins!
-      </button>
-    </section>
-    <section class="section-three">
-      <!--Third section-->
-      <h3>Earn passive income with crypto.</h3>
-      <p>
-        Earn up to 12% annual rewards on 30+ digital assets. Simply hold your
-        assets in the app to automatically earn rewards at the end of each month
-        with no lockups and no limits.
-      </p>
-      <div></div>
-      <!--This will be to enter your email.-->
-      <button>
-        <!--This button is to submit your email.-->
-        Submit
-      </button>
-      <img src="./assets/images/earnings.webp" alt="money image" />
-    </section>
-    <section class="footer">
-      <!---This will be the footer-->
-      <h3>LCT</h3>
-      <div>
-        <!--column 1-->
-        <ul>
-          <li>Support</li>
-          <li>Contact Us</li>
-          <li>FAQ</li>
-          <li>Chat</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>
-            <!--Column 2-->
-            Developers
-          </li>
-          <li>Cloud</li>
-          <li>Commerce</li>
-          <li>Pro</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Social</li>
-        </ul>
-      </div>
-    </section>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Lizard Coin Tracker</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./assets/cs/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+        />
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img
+                            src="./assets/images/lizardlogofinal.png"
+                            alt="Logo"
+                            id="logo"
+                        />
+                        Lizard Coin Tracker
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Crypto Currencies</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Watch List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Learn More</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="section-one">
+            <div class="explore">
+                <h2>Explore the cryptoeconomy!</h2>
+                <div class="ui-widget">
+                    <label for="tags">Tags: </label>
+                    <input id="tags" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section-two">
+            <h3>Explore top Cryptos like Bitcoin, Ethereum, and Dogecoin.</h3>
+            <button>See More Coins!</button>
+        </section>
+
+        <section class="section-three">
+            <h3>Earn passive income with crypto.</h3>
+            <p>
+                Earn up to 12% annual rewards on 30+ digital assets. Simply hold
+                your assets in the app to automatically earn rewards at the end
+                of each month with no lockups and no limits.
+            </p>
+            <div></div>
+            <button>Submit</button>
+            <img src="./assets/images/earnings.webp" alt="money image" />
+        </section>
+
+        <footer class="footer">
+            <h3>LCT</h3>
+            <div>
+                <ul>
+                    <li>Support</li>
+                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                    <li>Chat</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Developers</li>
+                    <li>Cloud</li>
+                    <li>Commerce</li>
+                    <li>Pro</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Social</li>
+                </ul>
+            </div>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>

@@ -1,33 +1,4 @@
-.title {
-  display: inline-block;
-  background-color: yellowgreen;
-
+#logo {
+  height: 80px;
 }
-
-.title img {
-  display: inline-block;
-  vertical-align: middle;
-  height: 165px;
-}
-
-h1 {
-  background-color: yellowgreen;
-    padding-top: 30px;
-    font-weight: 700;
-    font-size: 450%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.navbar {
-    padding-top: 15px;
-    padding-bottom: 30px;
-    font-weight: 700;
-    font-size: 200%;
-    background-color:yellowgreen;
-}
-
-.nav-bar:hover {
-    background-color:yellowgreen;
-  }
-
 
