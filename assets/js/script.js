@@ -4,8 +4,7 @@ let API_URL = "https://api.coingecko.com/api/v3/global";
 // Create a div to display the result
 let resultDiv = document.createElement("div");
 resultDiv.id = "result";
-document.body.appendChild(resultDiv);
-document.querySelector(".explore").appendChild(resultDiv);
+document.querySelector('.result').appendChild(resultDiv);
 
 // Fetch data from the API
 fetch(API_URL)

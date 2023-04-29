@@ -1,4 +1,38 @@
 #logo {
-  height: 80px;
+    height: 80px;
 }
 
+
+/* Navbar */
+.navbar-nav li a {
+    font-size: 30px;
+}
+
+.navbar-nav li a:hover {
+    color: purple;
+}
+
+nav.navbar {
+    border-bottom: 1px solid black;
+}
+
+.navbar-brand {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+@media (max-width: 1014px) {
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+/* Section One */
+#explore {
+  text-align: center;
+  border-bottom: 1px solid grey;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
