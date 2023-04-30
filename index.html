@@ -151,31 +151,50 @@
                 </div>
             </div>
         </div>
-        <section class="section-4">
-            <div class="fear-level extreme-fear">
-                <h2>Extreme Fear</h2>
-                <p>0-25</p>
-            </div>
-            <div class="fear-level fear">
-                <h2>Fear</h2>
-                <p>25-50</p>
-            </div>
-            <div class="fear-level neutral">
-                <h2>Neutral</h2>
-                <p>50</p>
-            </div>
-            <div class="fear-level greed">
-                <h2>Greed</h2>
-                <p>51-75</p>
-            </div>
-            <div class="fear-level extreme-greed">
-                <h2>Extreme Greed</h2>
-                <p>76-100</p>
+
+        <section class="section-4 pb-5">
+            <div id="fear-section-title" class="text-center pt-5 pb-3">
+                <h2>Fear and Greed Market Index</h2>
             </div>
 
-            <div class="current-fear-level">
-                <p>loading...</p>
+            <div id="all-fear-ratings" class="d-flex justify-content-around">
+                <div class="fear-level extreme-fear">
+                    <h3 class="text-center">Extreme Fear</h3>
+                    <p class="fs-5 text-center">0-24</p>
+                </div>
+                <div class="fear-level fear">
+                    <h3 class="text-center">Fear</h3>
+                    <p class="fs-5 text-center">25-49</p>
+                </div>
+                <div class="fear-level neutral">
+                    <h3 class="text-center">Neutral</h3>
+                    <p class="fs-5 text-center">50</p>
+                </div>
+                <div class="fear-level greed">
+                    <h3 class="text-center">Greed</h3>
+                    <p class="fs-5 text-center">51-75</p>
+                </div>
+                <div class="fear-level extreme-greed">
+                    <h3 class="text-center">Extreme Greed</h3>
+                    <p class="fs-5 text-center">76-100</p>
+                </div>
             </div>
+            <div id="dynamic-levels" class="d-flex flex-column align-items-center pt-4">
+                <div id="current-fear-level">
+                  <h3>Current fear level:</h3>
+                  <p class="level-value">loading...</p>
+                </div>
+              
+                <div id="month-ago-fear-level">
+                  <h3>Fear level one month ago:</h3>
+                  <p class="level-value">loading...</p>
+                </div>
+              
+                <div id="year-ago-fear-level">
+                  <h3>Fear level one year ago:</h3>
+                  <p class="level-value">loading...</p>
+                </div>
+              </div>
         </section>
 
         <footer>
@@ -227,6 +246,7 @@
                 </ul>
             </div>
         </footer>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

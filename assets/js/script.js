@@ -71,18 +71,25 @@ const options = {
 };
 // Asynchronously fetch the fear and greed index data from the API and update the DOM with the current fear level
 async function getFearAndGreedIndex() {
-    try {
-        const response = await fetch(url, options);
-        const result = await response.json();
-        console.log(result);
-        console.log(result.fgi.now.value);
-        const currentFearLevel = result.fgi.now.value;
-        document.querySelector(
-            '.current-fear-level p'
-        ).textContent = `Current fear level: ${currentFearLevel}`;
-    } catch (error) {
-        console.error(error);
-    }
+  try {
+    const response = await fetch(url, options);
+    const result = await response.json();
+    console.log(result);
+    console.log(result.fgi.now.value);
+    const currentFearLevelNum = result.fgi.now.value;
+    const currentFearLevelWord = result.fgi.now.valueText;
+    document.querySelector('#current-fear-level .level-value').textContent = `${currentFearLevelWord} - ${currentFearLevelNum}`;
+
+    const monthAgoFearLevelNum = result.fgi.oneMonthAgo.value;
+    const monthAgoFearLevelWord = result.fgi.oneMonthAgo.valueText;
+    document.querySelector('#month-ago-fear-level .level-value').textContent = `${monthAgoFearLevelWord} - ${monthAgoFearLevelNum}`; 
+
+    const yearAgoFearLevelNum = result.fgi.oneYearAgo.value;
+    const yearAgoFearLevelWord = result.fgi.oneYearAgo.valueText;
+    document.querySelector('#year-ago-fear-level .level-value').textContent = `${yearAgoFearLevelWord} - ${yearAgoFearLevelNum}`; 
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 getFearAndGreedIndex();
