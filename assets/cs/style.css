@@ -305,47 +305,6 @@ nav.navbar {
     }
 }
 
-/* Footer */
-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#footer-title {
-    width: 140px;
-    height: 100px;
-    background-color: #ccc;
-    margin: 10px;
-}
-
-#support,
-#developers,
-#company,
-#socials {
-    width: 140px;
-    height: 200px;
-    margin: 40px;
-    text-align: left;
-}
-
-#supTitle,
-#devTitle,
-#comTitle,
-#socTitle {
-    border-bottom: 1px solid gray;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-footer li {
-    margin-left: 10px;
-}
-
 /* Section 4 Fear levels */
 
 .section-4 {
@@ -392,3 +351,45 @@ footer li {
         margin: 15px 30px;
     }
 }
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#footer-title {
+    width: 140px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 10px;
+}
+
+#support,
+#developers,
+#company,
+#socials {
+    width: 140px;
+    height: 200px;
+    margin: 40px;
+    text-align: left;
+}
+
+#supTitle,
+#devTitle,
+#comTitle,
+#socTitle {
+    border-bottom: 1px solid gray;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-left: 10px;
+}
+
