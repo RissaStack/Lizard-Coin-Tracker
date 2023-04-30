@@ -38,3 +38,357 @@ nav.navbar {
     border-bottom: 1px solid grey;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.ui-widget input::placeholder {
+    text-align: center;
+}
+
+.ui-widget input {
+    padding: 10px 90px;
+}
+
+.ui-widget input {
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.result {
+    font-size: 17px;
+}
+
+/* Section Two */
+.section-two {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+}
+
+.side-info {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-info h3 {
+    text-align: center;
+}
+
+.see-more-coins {
+    background-color: #5b41c5;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.see-more-coins:hover {
+    background-color: #473391;
+    cursor: pointer;
+}
+
+.see-more-coins:active {
+    background-color: #5b41c5;
+    box-shadow: 0px 0px 15px rgba(142, 68, 173, 0.3);
+}
+
+#s2-cards {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#s2-card-item-1,
+#s2-card-item-2,
+#s2-card-item-3,
+#s2-card-item-4,
+#s2-card-item-5,
+#s2-card-item-6 {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    height: 200px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+#s2-card-item-1:hover,
+#s2-card-item-2:hover,
+#s2-card-item-3:hover,
+#s2-card-item-4:hover,
+#s2-card-item-5:hover,
+#s2-card-item-6:hover {
+    transform: scale(1.05);
+}
+
+
+
+#btcImgS3, 
+#ethImgS3,
+#bnbImgS3,
+#adaImgS3,
+#dogeImgS3,
+#linkImgS3 {
+    max-width: 105px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#btcPriceChangePercentage,
+#ethPriceChangePercentage,
+#bnbPriceChangePercentage,
+#adaPriceChangePercentage,
+#dogePriceChangePercentage,
+#linkPriceChangePercentage {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#btcCardPrice,
+#ethCardPrice,
+#bnbCardPrice,
+#adaCardPrice,
+#dogeCardPrice,
+#linkCardPrice {
+    text-align: center;
+}
+
+
+@media (min-width: 992px) and (max-width: 1600px) {
+    .cards {
+        width: 60%;
+    }
+
+    #s2-card-item-1,
+    #s2-card-item-2,
+    #s2-card-item-3,
+    #s2-card-item-4,
+    #s2-card-item-5,
+    #s2-card-item-6 {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+    }
+
+    #s2-card-item-2,
+    #s2-card-item-4,
+    #s2-card-item-6 {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-two {
+        flex-direction: column;
+    }
+
+    #s2-cards {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .side-info {
+        width: 100%;
+    }
+
+    #s2-card-item-1,
+    #s2-card-item-2,
+    #s2-card-item-3,
+    #s2-card-item-4,
+    #s2-card-item-5,
+    #s2-card-item-6 {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+/* Section Three */
+.section-three {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    border-bottom: 1px solid grey;
+}
+
+.l-side-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.l-side-image img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.r-side-info {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    align-content: flex-start;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#email-input {
+    width: 65%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+#email-button {
+    margin-left: 10px;
+    width: 90px;
+    margin-top: 2px;
+    background-color: #5b41c5;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#email-button:hover {
+    background-color: #473391;
+    cursor: pointer;
+}
+
+#email-button:active {
+    background-color: #5b41c5;
+    box-shadow: 0px 0px 15px rgba(142, 68, 173, 0.3);
+}
+
+@media (max-width: 1074px) {
+    .r-side-info {
+        padding-top: 18px;
+    }
+}
+
+@media only screen and (min-width: 1074px) {
+    .section-three {
+        justify-content: center;
+    }
+    .l-side-image {
+        width: 40%;
+    }
+    .r-side-info {
+        width: 50%;
+    }
+    .l-side-image img {
+        margin: 0;
+    }
+    .r-side-info {
+        margin-left: 40px;
+    }
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#footer-title {
+    width: 140px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 10px;
+}
+
+#support,
+#developers,
+#company,
+#socials {
+    width: 140px;
+    height: 200px;
+    margin: 40px;
+    text-align: left;
+}
+
+#supTitle,
+#devTitle,
+#comTitle,
+#socTitle {
+    border-bottom: 1px solid gray;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-left: 10px;
+}
+
+/* Section 4 Fear levels */
+
+.section-4 {
+    border-bottom: 1px solid gray;
+}
+
+.fear-level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 65px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    height: 150px;
+    
+}
+
+.fear-level:hover {
+    transform: scale(1.1);
+}
+
+#dynamic-levels h3,
+#dynamic-levels p.level-value {
+    display: inline-block;
+    margin: 0;
+}
+
+#dynamic-levels p.level-value {
+    font-size: 20px;
+}
+
+@media (max-width: 1074px) {
+    #all-fear-ratings {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1074px) {
+    .fear-level {
+        margin: 15px 30px;
+    }
+}
