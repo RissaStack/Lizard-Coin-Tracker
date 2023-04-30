@@ -188,7 +188,7 @@ fetch(
         document.querySelector(
             '#adaPriceChangePercentage'
         ).textContent = `${data[3].price_change_percentage_24h.toFixed(2)}%`;
-        // Btc current price
+        // ada current price
         document.querySelector(
             '#adaCardPrice'
         ).textContent = `$${data[3].current_price.toLocaleString()}`;
