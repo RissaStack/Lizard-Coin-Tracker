@@ -57,3 +57,32 @@ $(document).ready(function () {
         }
     });
 });
+
+// Fear and Greed Api
+// Define the API endpoint and options for making the request
+const url = 'https://fear-and-greed-index.p.rapidapi.com/v1/fgi';
+const options = {
+    method: 'GET',
+    headers: {
+        'content-type': 'application/octet-stream',
+        'X-RapidAPI-Key': '29c57de282mshdd469773ca73b8ap10523ajsn7c2115877b65',
+        'X-RapidAPI-Host': 'fear-and-greed-index.p.rapidapi.com',
+    },
+};
+// Asynchronously fetch the fear and greed index data from the API and update the DOM with the current fear level
+async function getFearAndGreedIndex() {
+    try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        console.log(result);
+        console.log(result.fgi.now.value);
+        const currentFearLevel = result.fgi.now.value;
+        document.querySelector(
+            '.current-fear-level p'
+        ).textContent = `Current fear level: ${currentFearLevel}`;
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+getFearAndGreedIndex();
