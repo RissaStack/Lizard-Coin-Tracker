@@ -130,9 +130,7 @@ nav.navbar {
     transform: scale(1.05);
 }
 
-
-
-#btcImgS3, 
+#btcImgS3,
 #ethImgS3,
 #bnbImgS3,
 #adaImgS3,
@@ -162,7 +160,6 @@ nav.navbar {
 #linkCardPrice {
     text-align: center;
 }
-
 
 @media (min-width: 992px) and (max-width: 1600px) {
     .cards {
@@ -305,6 +302,82 @@ nav.navbar {
     }
 }
 
+/* Section 4 Fear levels */
+
+.section-4 {
+    border-bottom: 1px solid gray;
+}
+
+.fear-level {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 65px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    height: 150px;
+}
+
+.extreme-fear {
+    background-color: #FF6961;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.fear {
+    background-color: #FFB6C1;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.neutral {
+    background-color: #ADD8E6;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.greed {
+    background-color: #77DD77;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.extreme-greed {
+    background-color: #B19CD9;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.fear-level:hover {
+    transform: scale(1.1);
+}
+
+#dynamic-levels h3,
+#dynamic-levels p.level-value {
+    display: inline-block;
+    margin: 0;
+}
+
+#dynamic-levels p.level-value {
+    font-size: 20px;
+}
+
+@media (max-width: 1074px) {
+    #all-fear-ratings {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1074px) {
+    .fear-level {
+        margin: 15px 30px;
+    }
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -344,51 +417,4 @@ footer ul {
 
 footer li {
     margin-left: 10px;
-}
-
-/* Section 4 Fear levels */
-
-.section-4 {
-    border-bottom: 1px solid gray;
-}
-
-.fear-level {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 65px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
-    height: 150px;
-    
-}
-
-.fear-level:hover {
-    transform: scale(1.1);
-}
-
-#dynamic-levels h3,
-#dynamic-levels p.level-value {
-    display: inline-block;
-    margin: 0;
-}
-
-#dynamic-levels p.level-value {
-    font-size: 20px;
-}
-
-@media (max-width: 1074px) {
-    #all-fear-ratings {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 1074px) {
-    .fear-level {
-        margin: 15px 30px;
-    }
 }
