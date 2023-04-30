@@ -1,41 +1,50 @@
-.title {
-  display: inline-block;
-  background-color: yellowgreen;
+/* html {
+    font-family: 'Open Sans', sans-serif;
+} */
 
+#logo {
+    height: 80px;
 }
 
-.title img {
-  display: inline-block;
-  vertical-align: middle;
-  height: 165px;
+/* Navbar */
+.navbar-nav li a {
+    font-size: 30px;
 }
 
-h1 {
-  background-color: yellowgreen;
-    padding-top: 30px;
-    font-weight: 700;
-    font-size: 450%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.navbar-nav li a:hover {
+    color: purple;
 }
 
-.navbar {
-    padding-top: 15px;
-    padding-bottom: 30px;
-    font-weight: 700;
-    font-size: 35px;
-    background-color:yellowgreen;
+nav.navbar {
+    border-bottom: 1px solid black;
 }
 
 .navbar-brand {
-  font-size: 35px;
+    font-size: 35px;
+    font-weight: bold;
 }
 
-.navbar-nav {
-  display: flex;
+@media (max-width: 1014px) {
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
 }
-ul {
-  margin-left: 200px;
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
+
+/* Section One */
+#explore {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 200%;
+    background-color:yellowgreen;
 }
+
+.nav-bar:hover {
+    background-color:yellowgreen;
+  }
+
+
