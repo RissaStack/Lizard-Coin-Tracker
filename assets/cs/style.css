@@ -267,7 +267,6 @@ footer li {
     border-bottom: 1px solid gray;
 }
 
-
 .fear-level {
     display: flex;
     flex-direction: column;
@@ -287,8 +286,8 @@ footer li {
 
 #dynamic-levels h3,
 #dynamic-levels p.level-value {
-  display: inline-block;
-  margin: 0;
+    display: inline-block;
+    margin: 0;
 }
 
 #dynamic-levels p.level-value {
