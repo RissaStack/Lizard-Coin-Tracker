@@ -49,7 +49,8 @@ nav.navbar {
 }
 
 .ui-widget input {
-    border-radius: 20%;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
 .result {
@@ -76,7 +77,28 @@ nav.navbar {
     text-align: center;
 }
 
-.cards {
+.see-more-coins {
+    background-color: #5b41c5;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.see-more-coins:hover {
+    background-color: #473391;
+    cursor: pointer;
+}
+
+.see-more-coins:active {
+    background-color: #5b41c5;
+    box-shadow: 0px 0px 15px rgba(142, 68, 173, 0.3);
+}
+
+#s2-cards {
     width: 60%;
     display: flex;
     flex-wrap: wrap;
@@ -84,12 +106,12 @@ nav.navbar {
     padding: 20px;
 }
 
-#card-item-1,
-#card-item-2,
-#card-item-3,
-#card-item-4,
-#card-item-5,
-#card-item-6 {
+#s2-card-item-1,
+#s2-card-item-2,
+#s2-card-item-3,
+#s2-card-item-4,
+#s2-card-item-5,
+#s2-card-item-6 {
     width: calc(33.33% - 20px);
     margin-bottom: 20px;
     height: 200px;
@@ -97,24 +119,56 @@ nav.navbar {
     border-radius: 10px;
 }
 
+#btcImgS3, 
+#ethImgS3,
+#bnbImgS3,
+#adaImgS3,
+#dogeImgS3,
+#linkImgS3 {
+    max-width: 105px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#btcPriceChangePercentage,
+#ethPriceChangePercentage,
+#bnbPriceChangePercentage,
+#adaPriceChangePercentage,
+#dogePriceChangePercentage,
+#linkPriceChangePercentage {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#btcCardPrice,
+#ethCardPrice,
+#bnbCardPrice,
+#adaCardPrice,
+#dogeCardPrice,
+#linkCardPrice {
+    text-align: center;
+}
+
+
 @media (min-width: 992px) and (max-width: 1600px) {
     .cards {
         width: 60%;
     }
 
-    #card-item-1,
-    #card-item-2,
-    #card-item-3,
-    #card-item-4,
-    #card-item-5,
-    #card-item-6 {
+    #s2-card-item-1,
+    #s2-card-item-2,
+    #s2-card-item-3,
+    #s2-card-item-4,
+    #s2-card-item-5,
+    #s2-card-item-6 {
         width: calc(50% - 20px);
         margin-right: 20px;
     }
 
-    #card-item-2,
-    #card-item-4,
-    #card-item-6 {
+    #s2-card-item-2,
+    #s2-card-item-4,
+    #s2-card-item-6 {
         margin-right: 0;
     }
 }
@@ -124,7 +178,7 @@ nav.navbar {
         flex-direction: column;
     }
 
-    .cards {
+    #s2-cards {
         width: 60%;
         margin: 0 auto;
     }
@@ -133,12 +187,12 @@ nav.navbar {
         width: 100%;
     }
 
-    #card-item-1,
-    #card-item-2,
-    #card-item-3,
-    #card-item-4,
-    #card-item-5,
-    #card-item-6 {
+    #s2-card-item-1,
+    #s2-card-item-2,
+    #s2-card-item-3,
+    #s2-card-item-4,
+    #s2-card-item-5,
+    #s2-card-item-6 {
         width: 100%;
         margin-bottom: 20px;
         margin-right: 0;
@@ -165,6 +219,8 @@ nav.navbar {
     display: block;
     margin: 0 auto;
     max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
 .r-side-info {
@@ -194,6 +250,22 @@ nav.navbar {
     margin-left: 10px;
     width: 90px;
     margin-top: 2px;
+    background-color: #5b41c5;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#email-button:hover {
+    background-color: #473391;
+    cursor: pointer;
+}
+
+#email-button:active {
+    background-color: #5b41c5;
+    box-shadow: 0px 0px 15px rgba(142, 68, 173, 0.3);
 }
 
 @media (max-width: 1074px) {

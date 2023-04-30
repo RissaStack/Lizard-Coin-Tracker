@@ -24,8 +24,8 @@ fetch(API_URL)
             change24h = -change24h;
         }
 
-        // Format the percentage change to one decimal place
-        change24h = change24h.toFixed(1);
+        // Format the percentage change to two decimal place
+        change24h = change24h.toFixed(2);
 
         // Display the result on the page
         let resultText =
@@ -99,3 +99,140 @@ async function getFearAndGreedIndex() {
 }
 
 getFearAndGreedIndex();
+
+// coingecko api for top 6 cryptocurrencies by market cap
+fetch(
+    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,cardano,dogecoin,chainlink,binancecoin&order=market_cap_desc&per_page=6&page=1&sparkline=false'
+)
+    .then((response) => response.json())
+    .then((data) => {
+        // manipulate data here
+        console.log(data);
+
+        // Btc image
+        btcImgS3.src = data[0].image;
+        // 24hr percentage
+        if (data[0].price_change_percentage_24h > 0) {
+            document.querySelector('#btcPriceChangePercentage').style.color =
+                'green';
+        } else if (data[0].price_change_percentage_24h === 0) {
+            document.querySelector('#btcPriceChangePercentage').style.color =
+                'black';
+        } else {
+            document.querySelector('#btcPriceChangePercentage').style.color =
+                'red';
+        }
+        document.querySelector(
+            '#btcPriceChangePercentage'
+        ).textContent = `${data[0].price_change_percentage_24h.toFixed(2)}%`;
+        // Btc current price
+        document.querySelector(
+            '#btcCardPrice'
+        ).textContent = `$${data[0].current_price.toLocaleString()}`;
+
+        // Ethereum image
+        ethImgS3.src = data[1].image;
+        // 24hr percentage
+        if (data[1].price_change_percentage_24h > 0) {
+            document.querySelector('#ethPriceChangePercentage').style.color =
+                'green';
+        } else if (data[1].price_change_percentage_24h === 0) {
+            document.querySelector('#ethPriceChangePercentage').style.color =
+                'black';
+        } else {
+            document.querySelector('#ethPriceChangePercentage').style.color =
+                'red';
+        }
+        document.querySelector(
+            '#ethPriceChangePercentage'
+        ).textContent = `${data[1].price_change_percentage_24h.toFixed(2)}%`;
+        // Eth current price
+        document.querySelector(
+            '#ethCardPrice'
+        ).textContent = `$${data[1].current_price.toLocaleString()}`;
+
+        // Bnb image
+        bnbImgS3.src = data[2].image;
+        // 24hr percentage
+        if (data[2].price_change_percentage_24h > 0) {
+            document.querySelector('#bnbPriceChangePercentage').style.color =
+                'green';
+        } else if (data[2].price_change_percentage_24h === 0) {
+            document.querySelector('#bnbPriceChangePercentage').style.color =
+                'black';
+        } else {
+            document.querySelector('#bnbPriceChangePercentage').style.color =
+                'red';
+        }
+        document.querySelector(
+            '#bnbPriceChangePercentage'
+        ).textContent = `${data[2].price_change_percentage_24h.toFixed(2)}%`;
+        // Bnb current price
+        document.querySelector(
+            '#bnbCardPrice'
+        ).textContent = `$${data[2].current_price.toLocaleString()}`;
+
+        // ada image
+        adaImgS3.src = data[3].image;
+        // 24hr percentage
+        if (data[3].price_change_percentage_24h > 0) {
+            document.querySelector('#adaPriceChangePercentage').style.color =
+                'green';
+        } else if (data[3].price_change_percentage_24h === 0) {
+            document.querySelector('#adaPriceChangePercentage').style.color =
+                'black';
+        } else {
+            document.querySelector('#adaPriceChangePercentage').style.color =
+                'red';
+        }
+        document.querySelector(
+            '#adaPriceChangePercentage'
+        ).textContent = `${data[3].price_change_percentage_24h.toFixed(2)}%`;
+        // Btc current price
+        document.querySelector(
+            '#adaCardPrice'
+        ).textContent = `$${data[3].current_price.toLocaleString()}`;
+
+        // doge image
+        dogeImgS3.src = data[4].image;
+        // 24hr percentage
+        if (data[4].price_change_percentage_24h > 0) {
+            document.querySelector('#dogePriceChangePercentage').style.color =
+                'green';
+        } else if (data[4].price_change_percentage_24h === 0) {
+            document.querySelector('#dogePriceChangePercentage').style.color =
+                'black';
+        } else {
+            document.querySelector('#dogePriceChangePercentage').style.color =
+                'red';
+        }
+        document.querySelector(
+            '#dogePriceChangePercentage'
+        ).textContent = `${data[4].price_change_percentage_24h.toFixed(2)}%`;
+        // Doge current price
+        document.querySelector(
+            '#dogeCardPrice'
+        ).textContent = `$${data[4].current_price.toLocaleString()}`;
+
+        // link image
+        linkImgS3.src = data[5].image;
+        // 24hr percentage
+        if (data[5].price_change_percentage_24h > 0) {
+            document.querySelector('#linkPriceChangePercentage').style.color =
+                'green';
+        } else if (data[5].price_change_percentage_24h === 0) {
+            document.querySelector('#linkPriceChangePercentage').style.color =
+                'black';
+        } else {
+            document.querySelector('#linkPriceChangePercentage').style.color =
+                'red';
+        }
+        document.querySelector(
+            '#linkPriceChangePercentage'
+        ).textContent = `${data[5].price_change_percentage_24h.toFixed(2)}%`;
+        // Link current price
+        document.querySelector(
+            '#linkCardPrice'
+        ).textContent = `$${data[5].current_price.toLocaleString()}`;
+    })
+    .catch((error) => console.error(error));
