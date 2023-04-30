@@ -130,9 +130,7 @@ nav.navbar {
     transform: scale(1.05);
 }
 
-
-
-#btcImgS3, 
+#btcImgS3,
 #ethImgS3,
 #bnbImgS3,
 #adaImgS3,
@@ -162,7 +160,6 @@ nav.navbar {
 #linkCardPrice {
     text-align: center;
 }
-
 
 @media (min-width: 992px) and (max-width: 1600px) {
     .cards {
@@ -322,7 +319,6 @@ nav.navbar {
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
     height: 150px;
-    
 }
 
 .fear-level:hover {
@@ -392,4 +388,3 @@ footer ul {
 footer li {
     margin-left: 10px;
 }
-
