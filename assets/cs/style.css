@@ -12,7 +12,8 @@
 }
 
 .navbar-nav li a:hover {
-    color: purple;
+    color: #800080;
+    background-color: lightgray;
 }
 
 nav.navbar {
@@ -322,31 +323,31 @@ nav.navbar {
 }
 
 .extreme-fear {
-    background-color: #FF6961;
+    background-color: #ff6961;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
 .fear {
-    background-color: #FFB6C1;
+    background-color: #ffb6c1;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
 .neutral {
-    background-color: #ADD8E6;
+    background-color: #add8e6;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
 .greed {
-    background-color: #77DD77;
+    background-color: #77dd77;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
 .extreme-greed {
-    background-color: #B19CD9;
+    background-color: #b19cd9;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
@@ -417,4 +418,14 @@ footer ul {
 
 footer li {
     margin-left: 10px;
+}
+
+.foot-names:hover {
+    color: #800080;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.foot-subj {
+    font-weight: bolder;
 }
