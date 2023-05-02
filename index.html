@@ -1,304 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Lizard Coin Tracker</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="./assets/cs/style.css" />
-        <link
-            rel="stylesheet"
-            href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
-            rel="stylesheet"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lizard Coin Tracker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/cs/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
+      rel="stylesheet"
+    />
 
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-        <title>Lizard Coin Tracker</title>
-    </head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>Lizard Coin Tracker</title>
+  </head>
 
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img
-                            src="./assets/images/lizardlogofinal.png"
-                            alt="Logo"
-                            id="logo"
-                        />
-                        LizardCoinTracker
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html"
-                                    >Crypto Currencies</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./second.html"
-                                    >Watch List</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./learnmore.html"
-                                    >Learn More</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/f" alt="Logo" id="logo" />
+            LizardCoinTracker
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Crypto Currencies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./second.html">Watch List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./learnmore.html">Learn More</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <section class="section-one">
-            <div id="explore">
-                <h3>Explore the cryptoeconomy!</h3>
-                <div class="result pt-1"></div>
-                <div class="ui-widget pt-1">
-                    <label for="tags"></label>
-                    <input id="tags" placeholder="Search for an asset" />
-                </div>
-            </div>
-        </section>
+    <section class="section-one">
+      <div id="explore">
+        <h3>Explore the cryptoeconomy!</h3>
+        <div class="result pt-1"></div>
+        <div class="ui-widget pt-1">
+          <label for="tags"></label>
+          <input id="tags" placeholder="Search for an asset" />
+        </div>
+      </div>
+    </section>
 
-        <section class="section-two">
-            <div class="side-info">
-                <h3>
-                    Explore top Cryptos like Bitcoin, Ethereum, and Dogecoin.
-                </h3>
-                <button class="see-more-coins">See More Coins!</button>
-            </div>
-            <div id="s2-cards">
-                <div id="s2-card-item-1">
-                    <div id="card-data-container-1">
-                        <img id="btcImgS3" class="pt-3 pb-2" src="" alt="" />
-                        <p id="btcPriceChangePercentage"></p>
-                        <p id="btcCardPrice"></p>
-                    </div>
-                </div>
-
-                <div id="s2-card-item-2">
-                    <div id="card-data-container-2">
-                        <img id="ethImgS3" class="pt-3 pb-2" src="" alt="" />
-                        <p id="ethPriceChangePercentage"></p>
-                        <p id="ethCardPrice"></p>
-                    </div>
-                </div>
-
-                <div id="s2-card-item-3">
-                    <div id="card-data-container-3">
-                        <img id="bnbImgS3" class="pt-3 pb-2" src="" alt="" />
-                        <p id="bnbPriceChangePercentage"></p>
-                        <p id="bnbCardPrice"></p>
-                    </div>
-                </div>
-
-                <div id="s2-card-item-4">
-                    <div id="card-data-container-4">
-                        <img id="adaImgS3" class="pt-3 pb-2" src="" alt="" />
-                        <p id="adaPriceChangePercentage"></p>
-                        <p id="adaCardPrice"></p>
-                    </div>
-                </div>
-
-                <div id="s2-card-item-5">
-                    <div id="card-data-containe-5">
-                        <img id="dogeImgS3" class="pt-3 pb-2" src="" alt="" />
-                        <p id="dogePriceChangePercentage"></p>
-                        <p id="dogeCardPrice"></p>
-                    </div>
-                </div>
-
-                <div id="s2-card-item-6">
-                    <div id="card-data-container-6">
-                        <img id="linkImgS3" class="pt-3 pb-2" src="" alt="" />
-                        <p id="linkPriceChangePercentage"></p>
-                        <p id="linkCardPrice"></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-three py-5">
-            <div class="l-side-image">
-                <img
-                    src="./assets/images/istockphoto-1166623539-170667a.jpg"
-                    alt="money image"
-                />
-            </div>
-            <div class="r-side-info">
-                <div id="passive-income-section">
-                    <h3>Earn passive income with crypto.</h3>
-                    <p>
-                        Earn up to 12% annual rewards on 30+ digital assets.
-                        Simply hold your assets in the app to automatically earn
-                        rewards at the end of each month with no lockups and no
-                        limits.
-                    </p>
-                </div>
-                <div class="input-container">
-                    <input
-                        id="email-input"
-                        type="email"
-                        placeholder="Enter your email for mailing list"
-                    />
-                    <button id="email-button">Submit</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Modal -->
-        <div
-            class="modal fade"
-            id="success-modal"
-            tabindex="-1"
-            aria-labelledby="success-modal-label"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="success-modal-label">
-                            Success!
-                        </h5>
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>You are now on our mailing list!</p>
-                    </div>
-                </div>
-            </div>
+    <section class="section-two">
+      <div class="side-info">
+        <h3>Explore top Cryptos like Bitcoin, Ethereum, and Dogecoin.</h3>
+        <button class="see-more-coins">See More Coins!</button>
+      </div>
+      <div id="s2-cards">
+        <div id="s2-card-item-1">
+          <div id="card-data-container-1">
+            <img id="btcImgS3" class="pt-3 pb-2" src="" alt="" />
+            <p id="btcPriceChangePercentage"></p>
+            <p id="btcCardPrice"></p>
+          </div>
         </div>
 
-        <section class="section-4 pb-5">
-            <div id="fear-section-title" class="text-center pt-5 pb-3">
-                <h2>Fear and Greed Market Index</h2>
-            </div>
+        <div id="s2-card-item-2">
+          <div id="card-data-container-2">
+            <img id="ethImgS3" class="pt-3 pb-2" src="" alt="" />
+            <p id="ethPriceChangePercentage"></p>
+            <p id="ethCardPrice"></p>
+          </div>
+        </div>
 
-            <div id="all-fear-ratings" class="d-flex justify-content-around">
-                <div class="fear-level extreme-fear">
-                    <h3 class="text-center">Extreme Fear</h3>
-                    <p class="fs-5 text-center">0-25</p>
-                </div>
-                <div class="fear-level fear">
-                    <h3 class="text-center">Fear</h3>
-                    <p class="fs-5 text-center">25-45</p>
-                </div>
-                <div class="fear-level neutral">
-                    <h3 class="text-center">Neutral</h3>
-                    <p class="fs-5 text-center">45-55</p>
-                </div>
-                <div class="fear-level greed">
-                    <h3 class="text-center">Greed</h3>
-                    <p class="fs-5 text-center">55-75</p>
-                </div>
-                <div class="fear-level extreme-greed">
-                    <h3 class="text-center">Extreme Greed</h3>
-                    <p class="fs-5 text-center">75-100</p>
-                </div>
-            </div>
-            <div
-                id="dynamic-levels"
-                class="d-flex flex-column align-items-center pt-4"
-            >
-                <div id="current-fear-level">
-                    <h3>Current fear level:</h3>
-                    <p class="level-value">loading...</p>
-                </div>
+        <div id="s2-card-item-3">
+          <div id="card-data-container-3">
+            <img id="bnbImgS3" class="pt-3 pb-2" src="" alt="" />
+            <p id="bnbPriceChangePercentage"></p>
+            <p id="bnbCardPrice"></p>
+          </div>
+        </div>
 
-                <div id="month-ago-fear-level">
-                    <h3>Fear level one month ago:</h3>
-                    <p class="level-value">loading...</p>
-                </div>
-                <div id="year-ago-fear-level">
-                    <h3>Fear level one year ago:</h3>
-                    <p class="level-value">loading...</p>
-                </div>
-            </div>
-        </section>
+        <div id="s2-card-item-4">
+          <div id="card-data-container-4">
+            <img id="adaImgS3" class="pt-3 pb-2" src="" alt="" />
+            <p id="adaPriceChangePercentage"></p>
+            <p id="adaCardPrice"></p>
+          </div>
+        </div>
 
-        <footer class="foorter">
-            <div id="footer-title">
-                <h3>LCT</h3>
-                <p>rights reserved</p>
-            </div>
+        <div id="s2-card-item-5">
+          <div id="card-data-containe-5">
+            <img id="dogeImgS3" class="pt-3 pb-2" src="" alt="" />
+            <p id="dogePriceChangePercentage"></p>
+            <p id="dogeCardPrice"></p>
+          </div>
+        </div>
 
-            <div id="support">
-                <ul id="supTitle">
-                    <li class="foot-subj">Support</li>
-                </ul>
-                <ul>
-                    <li class="foot-names">Contact Us</li>
-                    <li class="foot-names">FAQ</li>
-                    <li class="foot-names">Chat</li>
-                </ul>
-            </div>
-            <div id="developers">
-                <ul id="devTitle">
-                    <li class="foot-subj">Develops</li>
-                </ul>
-                <ul>
-                    <li class="foot-names">Cloud</li>
-                    <li class="foot-names">Commerce</li>
-                    <li class="foot-names">Pro</li>
-                </ul>
-            </div>
-            <div id="company">
-                <ul id="comTitle">
-                    <li class="foot-subj">Company</li>
-                </ul>
-                <ul>
-                    <li class="foot-names">About</li>
-                    <li class="foot-names">Information</li>
-                    <li class="foot-names">Legal</li>
-                    <li class="foot-names">Privacy</li>
-                </ul>
-            </div>
-            <div id="socials">
-                <ul id="socTitle">
-                    <li class="foot-subj">Socials</li>
-                </ul>
-                <ul>
-                    <li class="foot-names"><a href="#">Github</a></li>
-                    <li class="foot-names"><a href="#">Linkdin</a></li>
-                    <li class="foot-names"><a href="#">Gitlab</a></li>
-                    <li class="foot-names"><a href="#">Instagram</a></li>
-                </ul>
-            </div>
-        </footer>
+        <div id="s2-card-item-6">
+          <div id="card-data-container-6">
+            <img id="linkImgS3" class="pt-3 pb-2" src="" alt="" />
+            <p id="linkPriceChangePercentage"></p>
+            <p id="linkCardPrice"></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-            crossorigin="anonymous"
-        ></script>
-        <script src="./assets/js/script.js"></script>
-    </body>
+    <section class="section-three py-5">
+      <div class="l-side-image">
+        <img
+          src="./assets/images/istockphoto-1166623539-170667a.jpg"
+          alt="money image"
+        />
+      </div>
+      <div class="r-side-info">
+        <div id="passive-income-section">
+          <h3>Earn passive income with crypto.</h3>
+          <p>
+            Earn up to 12% annual rewards on 30+ digital assets. Simply hold
+            your assets in the app to automatically earn rewards at the end of
+            each month with no lockups and no limits. Stay up to date with the
+            latest happenings in the world of crypto finance. Our platform
+            provides access to invest in, manage, trade, and store digital
+            assets securely.
+          </p>
+        </div>
+        <div class="input-container">
+          <input
+            id="email-input"
+            type="email"
+            placeholder="Enter your email for mailing list"
+          />
+          <button id="email-button">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="success-modal"
+      tabindex="-1"
+      aria-labelledby="success-modal-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="success-modal-label">Success!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>You are now on our mailing list!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section-4 pb-5">
+      <div id="fear-section-title" class="text-center pt-5 pb-3">
+        <h2>Fear and Greed Market Index</h2>
+      </div>
+
+      <div id="all-fear-ratings" class="d-flex justify-content-around">
+        <div class="fear-level extreme-fear">
+          <h3 class="text-center">Extreme Fear</h3>
+          <p class="fs-5 text-center">0-25</p>
+        </div>
+        <div class="fear-level fear">
+          <h3 class="text-center">Fear</h3>
+          <p class="fs-5 text-center">25-45</p>
+        </div>
+        <div class="fear-level neutral">
+          <h3 class="text-center">Neutral</h3>
+          <p class="fs-5 text-center">45-55</p>
+        </div>
+        <div class="fear-level greed">
+          <h3 class="text-center">Greed</h3>
+          <p class="fs-5 text-center">55-75</p>
+        </div>
+        <div class="fear-level extreme-greed">
+          <h3 class="text-center">Extreme Greed</h3>
+          <p class="fs-5 text-center">75-100</p>
+        </div>
+      </div>
+      <div
+        id="dynamic-levels"
+        class="d-flex flex-column align-items-center pt-4"
+      >
+        <div id="current-fear-level">
+          <h3>Current fear level:</h3>
+          <p class="level-value">loading...</p>
+        </div>
+
+        <div id="month-ago-fear-level">
+          <h3>Fear level one month ago:</h3>
+          <p class="level-value">loading...</p>
+        </div>
+        <div id="year-ago-fear-level">
+          <h3>Fear level one year ago:</h3>
+          <p class="level-value">loading...</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foorter">
+      <div id="footer-title">
+        <h3>LCT</h3>
+        <p>rights reserved</p>
+      </div>
+
+      <div id="support">
+        <ul id="supTitle">
+          <li class="foot-subj">Support</li>
+        </ul>
+        <ul>
+          <li class="foot-names">Contact Us</li>
+          <li class="foot-names">FAQ</li>
+          <li class="foot-names">Chat</li>
+        </ul>
+      </div>
+      <div id="developers">
+        <ul id="devTitle">
+          <li class="foot-subj">Develops</li>
+        </ul>
+        <ul>
+          <li class="foot-names">Cloud</li>
+          <li class="foot-names">Commerce</li>
+          <li class="foot-names">Pro</li>
+        </ul>
+      </div>
+      <div id="company">
+        <ul id="comTitle">
+          <li class="foot-subj">Company</li>
+        </ul>
+        <ul>
+          <li class="foot-names">About</li>
+          <li class="foot-names">Information</li>
+          <li class="foot-names">Legal</li>
+          <li class="foot-names">Privacy</li>
+        </ul>
+      </div>
+      <div id="socials">
+        <ul id="socTitle">
+          <li class="foot-subj">Socials</li>
+        </ul>
+        <ul>
+          <li class="foot-names"><a href="#">Github</a></li>
+          <li class="foot-names"><a href="#">Linkdin</a></li>
+          <li class="foot-names"><a href="#">Gitlab</a></li>
+          <li class="foot-names"><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
