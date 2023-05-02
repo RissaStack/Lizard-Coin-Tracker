@@ -9,21 +9,25 @@
     background-color: rgba(121, 56, 149, 0.3);
 }
 
+.nav-itemCrypto-Currencies a {
+    text-decoration: underline;
+}
+
 /* Navbar */
 .navbar-nav li a {
     font-size: 35px;
-    padding-top: 20px;
 }
 
 .navbar-nav li a:hover {
     color: #800080;
     background-color: rgba(114, 52, 140, 0.3);
     cursor: pointer;
-    border-bottom: 2px solid;
+    text-decoration: underline;
+    /* border-bottom: 2px solid; */
 }
 
 nav.navbar {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 .navbar-brand {
@@ -475,7 +479,17 @@ footer li {
     font-weight: bolder;
 }
 
-/* CSS for the learn more HTML. */
+/* CSS for the Learn More HTML. */
+
+#NavbackgroundcolorLM {
+    background-color: rgba(121, 56, 149, 0.3);
+}
+
+.nav-itemLearn-More a {
+    text-decoration: underline;
+  }
+  
+
 #img-wallet {
     width: 30%;
     float: left;
@@ -513,4 +527,14 @@ footer li {
     margin: 100px 40px;
     border-bottom: 1px solid black;
     padding-bottom: 20px;
+}
+
+
+/* CSS for the Watch List HTML */
+#NavbackgroundcolorWL {
+    background-color: rgba(121, 56, 149, 0.3);
+}
+
+.nav-itemWatch-List a{
+    text-decoration: underline;
 }
