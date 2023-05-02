@@ -449,6 +449,12 @@ footer {
     border-bottom: 1px solid gray;
 }
 
+@media (max-width: 1074px) {
+    .footer {
+        margin: 15px 30px;
+    }
+}
+
 footer ul {
     list-style: none;
     padding: 0;
@@ -461,7 +467,7 @@ footer li {
 
 .foot-names:hover {
     color: #800080;
-    background-color: lightgray;
+    padding-left: 10px;
     cursor: pointer;
 }
 
@@ -469,42 +475,21 @@ footer li {
     font-weight: bolder;
 }
 
-/* CSS for the learn more HTML. */
-#img-wallet {
-    width: 30%;
-    float: left;
-    margin-right: 30px;
+/* These media queries are to make the footer responsive. */
+@media (max-width: 600px) {
+    .footer {
+        width: 25%;
+    }
 }
 
-.arti-one {
-    overflow: auto;
-    margin: 100px 40px;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
+@media (min-width: 601px) and (max-width: 900px) {
+    .footer {
+        width: 50%;
+    }
 }
 
-#img-graph {
-    width: 30%;
-    float: right;
-    margin-left: 30px;
-}
-
-.arti-two {
-    overflow: auto;
-    margin: 100px 40px;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
-}
-
-#img-coins {
-    width: 30%;
-    float: left;
-    margin-right: 30px;
-}
-
-.arti-three {
-    overflow: auto;
-    margin: 100px 40px;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
+@media (min-width: 901px) {
+    .footer {
+        width: 100%;
+    }
 }
