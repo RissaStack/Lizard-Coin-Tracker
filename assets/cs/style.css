@@ -12,7 +12,9 @@
 }
 
 .navbar-nav li a:hover {
-    color: purple;
+    color: #800080;
+    background-color: lightgray;
+    cursor: pointer;
 }
 
 nav.navbar {
@@ -359,6 +361,33 @@ nav.navbar {
 
 #year-ago-fear-level .level-value {
     padding-left: 15px;
+    background-color: #ff6961;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.fear {
+    background-color: #ffb6c1;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.neutral {
+    background-color: #add8e6;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.greed {
+    background-color: #77dd77;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.extreme-greed {
+    background-color: #b19cd9;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
 .fear-level:hover {
@@ -428,4 +457,54 @@ footer ul {
 
 footer li {
     margin-left: 10px;
+}
+
+.foot-names:hover {
+    color: #800080;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.foot-subj {
+    font-weight: bolder;
+}
+
+/* CSS for the learn more HTML. */
+#img-wallet {
+    width: 30%;
+    float: left;
+    margin-right: 30px;
+}
+
+.arti-one {
+    overflow: auto;
+    margin: 100px 40px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+#img-graph {
+    width: 30%;
+    float: right;
+    margin-left: 30px;
+}
+
+.arti-two {
+    overflow: auto;
+    margin: 100px 40px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+#img-coins {
+    width: 30%;
+    float: left;
+    margin-right: 30px;
+}
+
+.arti-three {
+    overflow: auto;
+    margin: 100px 40px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
 }
