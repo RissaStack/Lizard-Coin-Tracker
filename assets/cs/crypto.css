@@ -1,0 +1,104 @@
+#logo {
+    height: 80px;
+}
+
+/* Navbar */
+.navbar-nav li a {
+    font-size: 30px;
+}
+
+.navbar-nav li a:hover {
+    color: #800080;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+nav.navbar {
+    border-bottom: 1px solid black;
+}
+
+.navbar-brand {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+@media (max-width: 1014px) {
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+/* Crypto Section */
+.crypto-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead th,
+  tbody td {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#footer-title {
+    width: 140px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 10px;
+}
+
+#support,
+#developers,
+#company,
+#socials {
+    width: 140px;
+    height: 200px;
+    margin: 40px;
+    text-align: left;
+}
+
+#supTitle,
+#devTitle,
+#comTitle,
+#socTitle {
+    border-bottom: 1px solid gray;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-left: 10px;
+}
+
+.foot-names:hover {
+    color: #800080;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.foot-subj {
+    font-weight: bolder;
+}
