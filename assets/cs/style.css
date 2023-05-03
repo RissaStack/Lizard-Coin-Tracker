@@ -1,3 +1,9 @@
+/*This is giving the entire site the fot from Google Fonts*/
+body {
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* html {
     font-family: 'Open Sans', sans-serif;
 } */
@@ -321,35 +327,34 @@ nav.navbar {
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
     height: 150px;
-    
+
     width: calc(20% - 2%);
 }
 
 .extreme-fear {
-    background-color: #FFC0B7;
-    border: 2px solid #BA415A;
+    background-color: #ffc0b7;
+    border: 2px solid #ba415a;
 }
 
 .fear {
-    background-color: #FFDCD0;
-    border: 2px solid #D16E13;
+    background-color: #ffdcd0;
+    border: 2px solid #d16e13;
 }
 
 .neutral {
-    background-color: #E6E6E6;
-    border: 2px solid #6E6E6E;
+    background-color: #e6e6e6;
+    border: 2px solid #6e6e6e;
 }
 
 .greed {
-    background-color: #B9EDE9;
-    border: 2px solid #3FA774;
+    background-color: #b9ede9;
+    border: 2px solid #3fa774;
 }
 
 .extreme-greed {
-    background-color: #8CD6C3;
-    border: 2px solid #2B7A53;
+    background-color: #8cd6c3;
+    border: 2px solid #2b7a53;
 }
-
 
 #current-fear-level .level-value {
     padding-left: 15px;
@@ -423,13 +428,14 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: rgba(121, 56, 149, 0.3);
 }
 
 #footer-title {
     width: 140px;
     height: 100px;
-    background-color: #ccc;
     margin: 10px;
+    padding-top: 30px;
 }
 
 #support,
@@ -492,4 +498,36 @@ footer li {
     .footer {
         width: 100%;
     }
+}
+
+/* Spacing for the footer. */
+#footer-title {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#support {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#developers {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#company {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#socials {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Footer logo */
+#img-c {
+    float: left;
+    padding-right: 10px;
 }
