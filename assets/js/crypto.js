@@ -6,7 +6,7 @@ const url =
 fetch(url)
     .then((response) => response.json())
     .then((data) => {
-        // console.log(data);
+        // Data from api is looped through and html elements are created and appended to dom (data from api is set to elements)
         for (let i = 0; i < data.length; i++) {
             const row = document.createElement('tr');
 
@@ -113,38 +113,34 @@ fetch(url)
             row.appendChild(sevenDayChartData);
         }
 
+        
         for (let i = 0; i < data.length; i++) {
-            const button = document.getElementById(`star-button-${i}`);
-            // console.log(button);
-            let obj = [];
+            // get star button for each item
+            const starButton = document.getElementById(`star-button-${i}`);
 
-            button.addEventListener('click', function (event) {
+            // listen for when star is clicked, grabs whole row and checks if it has been clicked already to avoid duplicates
+            starButton.addEventListener('click', function (event) {
                 const row = event.target.parentNode.parentNode;
                 console.log(row);
-                const arrIndex =
-                    row.getElementsByClassName('coin-number')[0].textContent - 1;
-
-                // console.log(arrIndex);
-
+               
+                const arrIndex = row.getElementsByClassName('coin-number')[0].textContent - 1;
                 if (!watchListArr.includes(arrIndex)) {
                     watchListArr.push(arrIndex);
-                    // console.log(watchListArr);
+                    console.log(watchListArr);
                 }
-
-
-                // local storage
+                // local storage here
             });
         }
 
+
+        // When Watchlist is clicked current tables are cleared and watchListArr is looped through and appended
         const navWatchList = document.getElementById('nav-item-id');
         navWatchList.addEventListener('click', function (event) {
             event.preventDefault();
             const tbody2 = document.querySelector('tbody');
             tbody2.innerHTML = ' ';
 
-            console.log('test');
             for (let i = 0; i < watchListArr.length; i++) {
-                console.log('test2');
                 const currentIndex = watchListArr[i];
                 console.log(currentIndex);
                 const row = document.createElement('tr');

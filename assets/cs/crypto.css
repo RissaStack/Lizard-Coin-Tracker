@@ -63,6 +63,7 @@ tbody td {
 
 .filled {
     background-image: url(../images/star-fill.svg);
+    background-color: transparent;
     height:20px;
     width: 20px;
     border: 0px;
