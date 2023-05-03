@@ -12,7 +12,7 @@ fetch(url)
 
             const starData = document.createElement('td');
             starData.classList.add('star');
-            starData.innerHTML = `<button id="star-button-${i}"><img src="" alt=""></button>`;
+            starData.innerHTML = `<button class="unfilled" id="star-button-${i}"></button>`;
             const coinNumberData = document.createElement('td');
             coinNumberData.classList.add('coin-number');
             coinNumberData.textContent = i + 1;
@@ -120,15 +120,19 @@ fetch(url)
 
             button.addEventListener('click', function (event) {
                 const row = event.target.parentNode.parentNode;
+                console.log(row);
                 const arrIndex =
-                    row.getElementsByClassName('coin-number')[0].textContent -
-                    1;
+                    row.getElementsByClassName('coin-number')[0].textContent - 1;
+
                 // console.log(arrIndex);
 
                 if (!watchListArr.includes(arrIndex)) {
                     watchListArr.push(arrIndex);
                     // console.log(watchListArr);
                 }
+
+
+                // local storage
             });
         }
 
@@ -140,14 +144,14 @@ fetch(url)
 
             console.log('test');
             for (let i = 0; i < watchListArr.length; i++) {
-                console.log('test2')
+                console.log('test2');
                 const currentIndex = watchListArr[i];
                 console.log(currentIndex);
                 const row = document.createElement('tr');
 
                 const starData = document.createElement('td');
                 starData.classList.add('star');
-                starData.innerHTML = `<button id="star-button-${currentIndex}"><img src="./assets/images/star.svg" alt=""></button>`;
+                starData.innerHTML = `<button class="filled" id="star-button-${currentIndex}"></button>`;
                 const coinNumberData = document.createElement('td');
                 coinNumberData.classList.add('coin-number');
                 coinNumberData.textContent = currentIndex + 1;
@@ -198,7 +202,8 @@ fetch(url)
                 );
                 const coin24hrVolumeSpan = document.createElement('span');
                 coin24hrVolumeSpan.classList.add('coin-24hr-volume');
-                coin24hrVolumeSpan.textContent = data[currentIndex].total_volume;
+                coin24hrVolumeSpan.textContent =
+                    data[currentIndex].total_volume;
 
                 const actualMktCapData = document.createElement('td');
                 actualMktCapData.classList.add('actual-mkt-cap');

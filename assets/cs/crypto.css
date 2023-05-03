@@ -50,6 +50,49 @@ tbody td {
     border-bottom: 1px solid #e5e5e5;
 }
 
+/* stars */
+
+.unfilled {
+    background-image: url(../images/star.svg);
+    background-color: transparent;
+    height:20px;
+    width: 20px;
+    border: 0px;
+    background-repeat: no-repeat;
+}
+
+.filled {
+    background-image: url(../images/star-fill.svg);
+    height:20px;
+    width: 20px;
+    border: 0px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 footer {
     display: flex;
