@@ -1,1 +1,1 @@
-# Lizard-Coint-Tracker
+# Lizard-Coin-Tracker
