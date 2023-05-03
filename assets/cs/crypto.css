@@ -40,17 +40,15 @@ nav.navbar {
 table {
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  thead th,
-  tbody td {
+}
+
+thead th,
+tbody td {
     padding: 12px;
     text-align: left;
     font-weight: bold;
     border-bottom: 1px solid #e5e5e5;
-  }
-  
-
+}
 
 /* Footer */
 footer {
@@ -101,4 +99,16 @@ footer li {
 
 .foot-subj {
     font-weight: bolder;
+}
+/* 
+heatmap */
+.coin-gecko-heatmap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.coin-gecko-heatmap div {
+    width: 60%;
+    justify-content: center;
 }
