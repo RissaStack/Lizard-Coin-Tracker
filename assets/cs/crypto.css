@@ -40,6 +40,7 @@ nav.navbar {
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 25px;
 }
 
 thead th {
@@ -92,6 +93,7 @@ tbody td {
     background-repeat: no-repeat;
     color: yellow;
 }
+
 
 /* Table Responsiveness */
 table {
