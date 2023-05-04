@@ -67,7 +67,7 @@ tbody td {
 }
 
 .coin-logo {
-    width: 4%;
+    width: 35px;
     height: auto;
     margin-right: 7px;
 }
@@ -93,26 +93,10 @@ tbody td {
     color: yellow;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Table Responsiveness */
+table {
+    overflow-x:auto
+}
 
 
 
