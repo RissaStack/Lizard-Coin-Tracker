@@ -15,9 +15,9 @@ body {
     background-color: rgba(121, 56, 149, 0.3);
 }
 
-.nav-itemCrypto-Currencies a {
+/* .nav-itemCrypto-Currencies a {
     text-decoration: underline;
-}
+} */
 
 /* Navbar */
 .navbar-nav li a {
@@ -28,8 +28,6 @@ body {
     color: #800080;
     background-color: rgba(114, 52, 140, 0.3);
     cursor: pointer;
-    text-decoration: underline;
-    /* border-bottom: 2px solid; */
 }
 
 nav.navbar {
@@ -42,11 +40,21 @@ nav.navbar {
 }
 
 @media (max-width: 1014px) {
+    .navbar-brand {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1014px) {
     .navbar-nav {
         width: 100%;
         text-align: center;
         margin-top: 1rem;
     }
+}
+
+#Navbackgroundcolor {
+    background-color: rgba(121, 56, 149, 0.3);
 }
 
 /* Section One */
@@ -68,6 +76,11 @@ nav.navbar {
 .ui-widget input {
     border-radius: 12px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 404px) {
+    .ui-widget input {
+        width: 55%;
+    }
 }
 
 .result {
@@ -105,7 +118,6 @@ nav.navbar {
     transition: background-color 0.3s ease;
 }
 .see-more-coins a {
-    
     border: none;
     color: #fff;
     font-size: 18px;
@@ -260,7 +272,7 @@ nav.navbar {
 
 .r-side-info {
     width: 100%;
-    max-width: 425px;
+    max-width: 440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -302,6 +314,10 @@ nav.navbar {
 #email-button:active {
     background-color: #5b41c5;
     box-shadow: 0px 0px 15px rgba(142, 68, 173, 0.3);
+}
+
+#passive-income-section h3 {
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1074px) {
@@ -349,31 +365,6 @@ nav.navbar {
     width: calc(20% - 2%);
 }
 
-.extreme-fear {
-    background-color: #ffc0b7;
-    border: 2px solid #ba415a;
-}
-
-.fear {
-    background-color: #ffdcd0;
-    border: 2px solid #d16e13;
-}
-
-.neutral {
-    background-color: #e6e6e6;
-    border: 2px solid #6e6e6e;
-}
-
-.greed {
-    background-color: #b9ede9;
-    border: 2px solid #3fa774;
-}
-
-.extreme-greed {
-    background-color: #8cd6c3;
-    border: 2px solid #2b7a53;
-}
-
 #current-fear-level .level-value {
     padding-left: 15px;
 }
@@ -384,33 +375,45 @@ nav.navbar {
 
 #year-ago-fear-level .level-value {
     padding-left: 15px;
-    background-color: #ff6961;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+#fear-section-title h2 {
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.extreme-fear {
+    background-color: #ffc0b7;
+    border: 2px solid #ba415a;
+    color: black;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.15);
 }
 
 .fear {
-    background-color: #ffb6c1;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    background-color: #ffdcd0;
+    border: 2px solid #d16e13;
+    color: black;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.15);
 }
 
 .neutral {
-    background-color: #add8e6;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    background-color: #e6e6e6;
+    border: 2px solid #6e6e6e;
+    color: black;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.15);
 }
 
 .greed {
-    background-color: #77dd77;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    background-color: #b9ede9;
+    border: 2px solid #3fa774;
+    color: black;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.15);
 }
 
 .extreme-greed {
-    background-color: #b19cd9;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    background-color: #8cd6c3;
+    border: 2px solid #2b7a53;
+    color: black;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.15);
 }
 
 .fear-level:hover {
@@ -527,16 +530,8 @@ footer li {
 #support {
     margin-left: 5%;
     margin-right: 5%;
-/* CSS for the Learn More HTML. */
-
-#NavbackgroundcolorLM {
-    background-color: rgba(121, 56, 149, 0.3);
 }
-
-.nav-itemLearn-More a {
-    text-decoration: underline;
-  }
-  
+/* CSS for the Learn More HTML. */
 
 #img-wallet {
     width: 30%;
@@ -565,12 +560,7 @@ footer li {
     padding-right: 10px;
 }
 
-
 /* CSS for the Watch List HTML */
 #NavbackgroundcolorWL {
     background-color: rgba(121, 56, 149, 0.3);
-}
-
-.nav-itemWatch-List a{
-    text-decoration: underline;
 }

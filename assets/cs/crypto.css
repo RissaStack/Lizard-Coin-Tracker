@@ -153,15 +153,3 @@ footer li {
 .foot-subj {
     font-weight: bolder;
 }
-/* 
-heatmap */
-.coin-gecko-heatmap {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.coin-gecko-heatmap div {
-    width: 60%;
-    justify-content: center;
-}
