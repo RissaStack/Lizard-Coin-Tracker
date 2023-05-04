@@ -55,3 +55,12 @@
     width: 17px;
 }
 
+.crypto-image {
+    box-shadow: 0px 0px 10px rgba(0, 0, 1, 0.4);
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.crypto-image:hover {
+    transform: scale(1.01);
+}
