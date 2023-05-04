@@ -11,7 +11,7 @@ let watchListArr = JSON.parse(localStorage.getItem('watchListArr')) || [];
 // let watchListArr = [];
 
 const url =
-    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h.7d&locale=en';
+    'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=25&page=1&sparkline=false&price_change_percentage=24h.7d&locale=en';
 
 fetch(url)
     .then((response) => response.json())
