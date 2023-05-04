@@ -36,3 +36,22 @@
     border-bottom: 1px solid black;
     padding-bottom: 20px;
 }
+
+#NavbackgroundcolorWL {
+    background-color: rgba(121, 56, 149, 0.3);
+}
+
+.foot-names:hover {
+    color: #800080;
+    background-color: lightgray;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.foot-names-socials:hover {
+    color: #800080;
+    background-color: lightgray;
+    cursor: pointer;
+    width: 17px;
+}
+

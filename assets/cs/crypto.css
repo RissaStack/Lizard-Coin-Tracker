@@ -159,6 +159,7 @@ footer li {
     color: #800080;
     background-color: lightgray;
     cursor: pointer;
+    padding-left: 10px;
 }
 
 .foot-names-socials:hover {
