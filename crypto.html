@@ -38,17 +38,17 @@
             href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="./assets/cs/crypto.css">
 
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
         <title>Lizard Coin Tracker</title>
     </head>
-
     <body>
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="./index.html">
                         <img
                             src="./assets/images/lizardlogofinal.png"
                             alt="Logo"
@@ -70,12 +70,12 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html"
+                                <a class="nav-link" id="nav-cc-id" href="#"
                                     >Crypto Currencies</a
                                 >
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./second.html"
+                            <li class="nav-item" id="nav-wl-id">
+                                <a class="nav-link" href="#"
                                     >Watch List</a
                                 >
                             </li>
@@ -89,10 +89,71 @@
                 </div>
             </nav>
         </header>
-        <section>
-            <!--Title Section-->
-            <div class="price-title">
-                <h1>Cryptocurrency Prices by Market Cap</h1>
+
+
+        
+        <section class="crypto-section">
+            <h3 id="crypto-header" class="pt-5 pb-3">
+                Crypto Currencies by Market Cap
+            </h3>
+            <div id="crypto-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="empty-star-th"></th>
+                            <th class="number-th">#</th>
+                            <th class="coin-name-th">Coin</th>
+                            <th class="price-th">Price</th>
+                            <th class="24hr-th">24hr Price Change</th>
+                            <th class="7d-th">24h High</th>
+                            <th class="24h-volume-th">Ath</th>
+                            <th class="mkt-cap-th">% from Ath</th>
+                            <th class="last-7-days-th">Mkt Cap</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- <tr>
+                            <td class="star"></td>
+                            <td class="coin-number">1</td>
+                            <td class="actual-coin">
+                                <div class="coin-info-div">
+                                    <img class="coin-logo" src="" alt="" />
+                                    <span class="coin-name">Bitcoin</span>
+                                    <span class="coin-abrv">BTC</span>
+                                </div>
+                            </td>
+                            <td class="actual-price">
+                                <div class="coin-price-data-div">
+                                    <span class="coin-price">$28,000</span>
+                                </div>
+                            </td>
+                            <td class="actual-24hr-%">
+                                <div class="coin-24hr-percent-data-div">
+                                    <span class="coin-percent-24hr">-2.0%</span>
+                                </div>
+                            </td>
+                            <td class="actual-7d-%">
+                                <div class="coin-7d-percent-data-div">
+                                    <span class="coin-percent-7d">1.8%</span>
+                                </div>
+                            </td>
+                            <td class="actual-24hr-volume">
+                                <div class="coin-24hr-volume-data-div">
+                                    <span class="coin-24hr-volume">$17,832,147,206</span>
+                                </div>
+                            </td>
+                            <td class="actual-mkt-cap">
+                                <div class="coin-mkt-cap-data-div">
+                                    <span class="coin-mkt-cap">$542,168,478,215</span>
+                                </div>
+                            </td>
+                            <td class="7-day-chart-td">
+                                <img class="7d-chart" src="" alt="" />
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
             </div>
         </section>
         <section class="market-prices">
@@ -188,6 +249,6 @@
                 </ul>
             </div>
         </footer>
-        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/crypto.js"></script>
     </body>
 </html>
