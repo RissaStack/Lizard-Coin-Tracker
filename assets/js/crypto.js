@@ -64,7 +64,12 @@ fetch(url)
                 const coin24hrPercentSpan = document.createElement('span');
                 coin24hrPercentSpan.classList.add('coin-percent-24hr');
                 coin24hrPercentSpan.textContent =
-                    data[i].price_change_percentage_24h.toFixed(2);
+                    `${data[i].price_change_percentage_24h.toFixed(2)}\%`;
+                if (data[i].price_change_percentage_24h.toFixed(2) > 0) {
+                    coin24hrPercentSpan.style.color = 'green';
+                } else {
+                    coin24hrPercentSpan.style.color = 'red';
+                }
 
                 const actual7dData = document.createElement('td');
                 actual7dData.classList.add('acutal-7d-%');
@@ -97,7 +102,12 @@ fetch(url)
                 const coinMktCapSpan = document.createElement('span');
                 coinMktCapSpan.classList.add('coin-mkt-cap');
                 coinMktCapSpan.textContent =
-                    data[i].ath_change_percentage.toFixed(2);
+                    `${data[i].ath_change_percentage.toFixed(2)}\%`;
+                if (data[i].ath_change_percentage.toFixed(2) > 0) {
+                    coinMktCapSpan.style.color = 'green';
+                } else {
+                    coinMktCapSpan.style.color = 'red';
+                }
 
                 const sevenDayChartData = document.createElement('td');
                 sevenDayChartData.classList.add('7-day-chart-td');
@@ -244,7 +254,12 @@ fetch(url)
                 coinPriceData.classList.add('coin-price-data-div');
                 const coinPriceSpan = document.createElement('span');
                 coinPriceSpan.classList.add('coin-price');
-                coinPriceSpan.textContent = data[currentIndex].current_price;
+                coinPriceSpan.textContent = data[
+                    currentIndex
+                ].current_price.toLocaleString('en-US', {
+                    style: 'currency',
+                    currency: 'USD',
+                });
 
                 const actual24hrPercentData = document.createElement('td');
                 actual24hrPercentData.classList.add('actual-24hr-%');
@@ -252,7 +267,16 @@ fetch(url)
                 coin24hrPercentData.classList.add('coin-24hr-percent-data-div');
                 const coin24hrPercentSpan = document.createElement('span');
                 coin24hrPercentSpan.classList.add('coin-percent-24hr');
-                coin24hrPercentSpan.textContent = data[currentIndex].low_24h;
+                coin24hrPercentSpan.textContent =
+                    `${data[currentIndex].price_change_percentage_24h.toFixed(2)}\%`;
+                if (
+                    data[currentIndex].price_change_percentage_24h.toFixed(2) >
+                    0
+                ) {
+                    coin24hrPercentSpan.style.color = 'green';
+                } else {
+                    coin24hrPercentSpan.style.color = 'red';
+                }
 
                 const actual7dData = document.createElement('td');
                 actual7dData.classList.add('acutal-7d-%');
@@ -260,7 +284,12 @@ fetch(url)
                 coin7dPercentDataDiv.classList.add('coin-7d-percent-data-div');
                 const coinPercent7dSpan = document.createElement('span');
                 coinPercent7dSpan.classList.add('coin-percent-7d');
-                coinPercent7dSpan.textContent = data[currentIndex].high_24h;
+                coinPercent7dSpan.textContent = data[
+                    currentIndex
+                ].high_24h.toLocaleString('en-US', {
+                    style: 'currency',
+                    currency: 'USD',
+                });
 
                 const actual24hrVolumeData = document.createElement('td');
                 actual24hrVolumeData.classList.add('actual-24hr-volume');
@@ -270,7 +299,12 @@ fetch(url)
                 );
                 const coin24hrVolumeSpan = document.createElement('span');
                 coin24hrVolumeSpan.classList.add('coin-24hr-volume');
-                coin24hrVolumeSpan.textContent = data[currentIndex].ath;
+                coin24hrVolumeSpan.textContent = data[
+                    currentIndex
+                ].ath.toLocaleString('en-US', {
+                    style: 'currency',
+                    currency: 'USD',
+                });
 
                 const actualMktCapData = document.createElement('td');
                 actualMktCapData.classList.add('actual-mkt-cap');
@@ -279,7 +313,12 @@ fetch(url)
                 const coinMktCapSpan = document.createElement('span');
                 coinMktCapSpan.classList.add('coin-mkt-cap');
                 coinMktCapSpan.textContent =
-                    data[currentIndex].ath_change_percentage;
+                    `${data[currentIndex].ath_change_percentage.toFixed(2)}\%`;
+                if (data[currentIndex].ath_change_percentage.toFixed(2) > 0) {
+                    coinMktCapSpan.style.color = 'green';
+                } else {
+                    coinMktCapSpan.style.color = 'red';
+                }
 
                 const sevenDayChartData = document.createElement('td');
                 sevenDayChartData.classList.add('7-day-chart-td');
@@ -287,7 +326,14 @@ fetch(url)
                 sevenDaychartImg.classList.add('sevenDayChart');
                 const mktCapSpan = document.createElement('span');
                 mktCapSpan.classList.add('mkt-cap-span');
-                mktCapSpan.textContent = data[currentIndex].market_cap;
+                mktCapSpan.textContent = data[
+                    currentIndex
+                ].market_cap.toLocaleString('en-US', {
+                    style: 'currency',
+                    currency: 'USD',
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0,
+                });
 
                 // Append
                 const tbody = document.querySelector('tbody');
@@ -326,8 +372,9 @@ fetch(url)
                 sevenDayChartData.appendChild(sevenDaychartImg);
                 row.appendChild(sevenDayChartData);
 
+                // Styling
                 const symbols = document.querySelectorAll('.coin-abrv');
-                symbols[i].style.paddingLeft = '5px';
+                symbols[currentIndex].style.paddingLeft = '5px';
             }
         });
 
@@ -338,7 +385,6 @@ fetch(url)
             event.preventDefault();
             const tbody2 = document.querySelector('tbody');
             tbody2.innerHTML = ' ';
-
             createTableRows();
         });
     });
