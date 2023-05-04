@@ -11,16 +11,25 @@ body {
 #logo {
     height: 80px;
 }
+#Navbackgroundcolor {
+    background-color: rgba(121, 56, 149, 0.3);
+}
+
+.nav-itemCrypto-Currencies a {
+    text-decoration: underline;
+}
 
 /* Navbar */
 .navbar-nav li a {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .navbar-nav li a:hover {
     color: #800080;
-    background-color: lightgray;
+    background-color: rgba(114, 52, 140, 0.3);
     cursor: pointer;
+    text-decoration: underline;
+    /* border-bottom: 2px solid; */
 }
 
 nav.navbar {
@@ -251,12 +260,13 @@ nav.navbar {
 
 .r-side-info {
     width: 100%;
-    max-width: 350px;
+    max-width: 425px;
     display: flex;
     flex-direction: column;
     align-items: center;
     display: flex;
     align-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .input-container {
@@ -266,15 +276,15 @@ nav.navbar {
 }
 
 #email-input {
-    width: 65%;
+    width: 75%;
     border-style: solid;
     border-width: 1px;
     border-color: grey;
 }
 
 #email-button {
-    margin-left: 10px;
-    width: 90px;
+    margin-left: 15px;
+    width: 100px;
     margin-top: 2px;
     background-color: #5b41c5;
     border: none;
@@ -517,6 +527,21 @@ footer li {
 #support {
     margin-left: 5%;
     margin-right: 5%;
+/* CSS for the Learn More HTML. */
+
+#NavbackgroundcolorLM {
+    background-color: rgba(121, 56, 149, 0.3);
+}
+
+.nav-itemLearn-More a {
+    text-decoration: underline;
+  }
+  
+
+#img-wallet {
+    width: 30%;
+    float: left;
+    margin-right: 30px;
 }
 
 #developers {
@@ -538,4 +563,14 @@ footer li {
 #img-c {
     float: left;
     padding-right: 10px;
+}
+
+
+/* CSS for the Watch List HTML */
+#NavbackgroundcolorWL {
+    background-color: rgba(121, 56, 149, 0.3);
+}
+
+.nav-itemWatch-List a{
+    text-decoration: underline;
 }
