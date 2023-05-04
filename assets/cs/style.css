@@ -444,6 +444,7 @@ nav.navbar {
     }
 }
 
+
 /* Footer */
 footer {
     display: flex;
@@ -455,8 +456,8 @@ footer {
 #footer-title {
     width: 140px;
     height: 100px;
+    background-color: #ccc;
     margin: 10px;
-    padding-top: 30px;
 }
 
 #support,
@@ -476,12 +477,6 @@ footer {
     border-bottom: 1px solid gray;
 }
 
-@media (max-width: 1074px) {
-    .footer {
-        margin: 15px 30px;
-    }
-}
-
 footer ul {
     list-style: none;
     padding: 0;
@@ -494,8 +489,15 @@ footer li {
 
 .foot-names:hover {
     color: #800080;
-    padding-left: 10px;
+    background-color: lightgray;
     cursor: pointer;
+}
+
+.foot-names-socials:hover {
+    color: #800080;
+    background-color: lightgray;
+    cursor: pointer;
+    width: 17px;
 }
 
 .foot-subj {

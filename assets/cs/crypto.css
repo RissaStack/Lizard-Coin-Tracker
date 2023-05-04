@@ -22,6 +22,16 @@ nav.navbar {
     font-weight: bold;
 }
 
+#Navbackgroundcolor {
+    background-color: rgba(121, 56, 149, 0.3);
+}
+
+@media (max-width: 1014px) {
+    .navbar-brand {
+        font-size: 25px;
+    }
+}
+
 @media (max-width: 1014px) {
     .navbar-nav {
         width: 100%;
@@ -108,6 +118,7 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: rgba(121, 56, 149, 0.3);
 }
 
 #footer-title {
@@ -150,6 +161,43 @@ footer li {
     cursor: pointer;
 }
 
+.foot-names-socials:hover {
+    color: #800080;
+    background-color: lightgray;
+    cursor: pointer;
+    width: 17px;
+}
+
 .foot-subj {
     font-weight: bolder;
+}
+
+/* Spacing for the footer. */
+#footer-title {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#support {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* These media queries are to make the footer responsive. */
+@media (max-width: 600px) {
+    .footer {
+        width: 25%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .footer {
+        width: 50%;
+    }
+}
+
+@media (min-width: 901px) {
+    .footer {
+        width: 100%;
+    }
 }
