@@ -1,3 +1,9 @@
+/*This is giving the entire site the fot from Google Fonts*/
+body {
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* html {
     font-family: 'Open Sans', sans-serif;
 } */
@@ -97,6 +103,14 @@ nav.navbar {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+}
+.see-more-coins a {
+    
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .see-more-coins:hover {
@@ -331,35 +345,34 @@ nav.navbar {
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
     height: 150px;
-    
+
     width: calc(20% - 2%);
 }
 
 .extreme-fear {
-    background-color: #FFC0B7;
-    border: 2px solid #BA415A;
+    background-color: #ffc0b7;
+    border: 2px solid #ba415a;
 }
 
 .fear {
-    background-color: #FFDCD0;
-    border: 2px solid #D16E13;
+    background-color: #ffdcd0;
+    border: 2px solid #d16e13;
 }
 
 .neutral {
-    background-color: #E6E6E6;
-    border: 2px solid #6E6E6E;
+    background-color: #e6e6e6;
+    border: 2px solid #6e6e6e;
 }
 
 .greed {
-    background-color: #B9EDE9;
-    border: 2px solid #3FA774;
+    background-color: #b9ede9;
+    border: 2px solid #3fa774;
 }
 
 .extreme-greed {
-    background-color: #8CD6C3;
-    border: 2px solid #2B7A53;
+    background-color: #8cd6c3;
+    border: 2px solid #2b7a53;
 }
-
 
 #current-fear-level .level-value {
     padding-left: 15px;
@@ -433,13 +446,14 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: rgba(121, 56, 149, 0.3);
 }
 
 #footer-title {
     width: 140px;
     height: 100px;
-    background-color: #ccc;
     margin: 10px;
+    padding-top: 30px;
 }
 
 #support,
@@ -459,6 +473,12 @@ footer {
     border-bottom: 1px solid gray;
 }
 
+@media (max-width: 1074px) {
+    .footer {
+        margin: 15px 30px;
+    }
+}
+
 footer ul {
     list-style: none;
     padding: 0;
@@ -471,7 +491,7 @@ footer li {
 
 .foot-names:hover {
     color: #800080;
-    background-color: lightgray;
+    padding-left: 10px;
     cursor: pointer;
 }
 
@@ -479,6 +499,34 @@ footer li {
     font-weight: bolder;
 }
 
+/* These media queries are to make the footer responsive. */
+@media (max-width: 600px) {
+    .footer {
+        width: 25%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .footer {
+        width: 50%;
+    }
+}
+
+@media (min-width: 901px) {
+    .footer {
+        width: 100%;
+    }
+}
+
+/* Spacing for the footer. */
+#footer-title {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#support {
+    margin-left: 5%;
+    margin-right: 5%;
 /* CSS for the Learn More HTML. */
 
 #NavbackgroundcolorLM {
@@ -496,37 +544,25 @@ footer li {
     margin-right: 30px;
 }
 
-.arti-one {
-    overflow: auto;
-    margin: 100px 40px;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
+#developers {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-#img-graph {
-    width: 30%;
-    float: right;
-    margin-left: 30px;
+#company {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.arti-two {
-    overflow: auto;
-    margin: 100px 40px;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
+#socials {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-#img-coins {
-    width: 30%;
+/* Footer logo */
+#img-c {
     float: left;
-    margin-right: 30px;
-}
-
-.arti-three {
-    overflow: auto;
-    margin: 100px 40px;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
+    padding-right: 10px;
 }
 
 
