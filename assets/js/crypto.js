@@ -181,8 +181,17 @@ fetch(url)
                 const arrIndex =
                     row.getElementsByClassName('coin-number')[0].textContent -
                     1;
+                // if its not apart of the watch list 
                 if (!watchListArr.includes(arrIndex)) {
+                    starButton.classList.remove('unfilled');
+                    starButton.classList.add('filled');
                     watchListArr.push(arrIndex);
+                    console.log(watchListArr);
+                }
+
+                if (watchListArr.includes(arrIndex)) {
+                    starButton.classList.remove('filled');
+                    starButton.classList.add('unfilled');
                     console.log(watchListArr);
                 }
                 // Save watchListArr to local storage
@@ -223,6 +232,7 @@ fetch(url)
             for (let i = 0; i < watchListArr.length; i++) {
                 const currentIndex = watchListArr[i];
                 console.log(currentIndex);
+                console.log(watchListArr.length);
                 const row = document.createElement('tr');
 
                 const starData = document.createElement('td');
@@ -373,8 +383,37 @@ fetch(url)
                 row.appendChild(sevenDayChartData);
 
                 // Styling
+                
                 const symbols = document.querySelectorAll('.coin-abrv');
-                symbols[currentIndex].style.paddingLeft = '5px';
+                console.log(symbols);
+                console.log(symbols[currentIndex]);
+                // symbols[currentIndex].style.paddingLeft = '5px';
+
+                const starButton = document.getElementById(`star-button-${currentIndex}`);
+                starButton.addEventListener('click', function (event) {
+                    const row = event.target.parentNode.parentNode;
+                    console.log(row);
+    
+                    const arrIndex =
+                        row.getElementsByClassName('coin-number')[0].textContent -
+                        1;
+                    // if its not apart of the watch list 
+                    if (!watchListArr.includes(arrIndex)) {
+                        starButton.classList.remove('unfilled');
+                        starButton.classList.add('filled');
+                        watchListArr.push(arrIndex);
+                        console.log(watchListArr);
+                    }
+    
+                    if (watchListArr.includes(arrIndex)) {
+                        starButton.classList.remove('filled');
+                        starButton.classList.add('unfilled');
+                        console.log(watchListArr);
+
+                        // code snippet here
+                    }
+                });    
+
             }
         });
 
@@ -386,5 +425,6 @@ fetch(url)
             const tbody2 = document.querySelector('tbody');
             tbody2.innerHTML = ' ';
             createTableRows();
+            location.reload();
         });
     });
