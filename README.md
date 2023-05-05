@@ -27,7 +27,7 @@ The Cryptocurrency page of our platform, providing real-time data and metrics fo
 The Watchlist page of our platform, allowing users to create a personalized list of their favorite coins and track them easily.
 ![webpage preview](assets/images/Watchlist-preview.png)
 
-Discover the essentials of crypto with our informative Learn page, featuring educational resources and industry analysis to keep you up-to-date.
+Discover the essentials of crypto with our informative Learn page, featuring educational resources if you are new to the world of crypto currencies.
 ![webpage preview](assets/images/Learnmore-preview.png)
 
 ## Technologies used
@@ -46,9 +46,9 @@ Discover the essentials of crypto with our informative Learn page, featuring edu
 
 I would like to thank the following individuals for their contributions to this project:
 
--   Connor G ([GitHub](https://github.com/connorg45){:target="_blank"})
--   Larissa S ([GitHub](https://github.com/RissaStack){:target="_blank"})
--   Ali B ([GitHub](https://github.com/alihumzahbeig){:target="_blank"})
+-   <a href="https://github.com/connorg45" target="_blank">Connor G</a>
+-   <a href="https://github.com/RissaStack" target="_blank">Larissa S</a>
+-   <a href="https://github.com/alihumzahbeig" target="_blank">Ali B</a>
 
 # Links
 
