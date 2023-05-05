@@ -24,7 +24,12 @@ fetch(url)
 
                 const starData = document.createElement('td');
                 starData.classList.add('star');
-                starData.innerHTML = `<button class="unfilled" id="star-button-${i}"></button>`;
+                if (watchListArr.includes(i)) {
+                    starData.innerHTML = `<button class="filled" id="star-button-${i}"></button>`;
+                } else {
+                    starData.innerHTML = `<button class="unfilled" id="star-button-${i}"></button>`;
+                }
+                // starData.innerHTML = `<button class="unfilled" id="star-button-${i}"></button>`;
                 const coinNumberData = document.createElement('td');
                 coinNumberData.classList.add('coin-number');
                 coinNumberData.textContent = i + 1;
@@ -63,8 +68,9 @@ fetch(url)
                 coin24hrPercentData.classList.add('coin-24hr-percent-data-div');
                 const coin24hrPercentSpan = document.createElement('span');
                 coin24hrPercentSpan.classList.add('coin-percent-24hr');
-                coin24hrPercentSpan.textContent =
-                    `${data[i].price_change_percentage_24h.toFixed(2)}\%`;
+                coin24hrPercentSpan.textContent = `${data[
+                    i
+                ].price_change_percentage_24h.toFixed(2)}\%`;
                 if (data[i].price_change_percentage_24h.toFixed(2) > 0) {
                     coin24hrPercentSpan.style.color = 'green';
                 } else {
@@ -101,8 +107,9 @@ fetch(url)
                 coinMktCapDataDiv.classList.add('coin-mkt-cap-data-div');
                 const coinMktCapSpan = document.createElement('span');
                 coinMktCapSpan.classList.add('coin-mkt-cap');
-                coinMktCapSpan.textContent =
-                    `${data[i].ath_change_percentage.toFixed(2)}\%`;
+                coinMktCapSpan.textContent = `${data[
+                    i
+                ].ath_change_percentage.toFixed(2)}\%`;
                 if (data[i].ath_change_percentage.toFixed(2) > 0) {
                     coinMktCapSpan.style.color = 'green';
                 } else {
@@ -181,17 +188,20 @@ fetch(url)
                 const arrIndex =
                     row.getElementsByClassName('coin-number')[0].textContent -
                     1;
-                // if its not apart of the watch list 
+                // if its not apart of the watch list
                 if (!watchListArr.includes(arrIndex)) {
                     starButton.classList.remove('unfilled');
                     starButton.classList.add('filled');
                     watchListArr.push(arrIndex);
-                    console.log(watchListArr);
-                }
-
-                if (watchListArr.includes(arrIndex)) {
+                    localStorage.setItem(`star-button-${i}`, 'filled');
+                    // console.log(watchListArr);
+                } else if (watchListArr.includes(arrIndex)) {
                     starButton.classList.remove('filled');
                     starButton.classList.add('unfilled');
+                    console.log(watchListArr);
+                    let index = watchListArr.indexOf(arrIndex);
+                    watchListArr.splice(index, 1);
+                    localStorage.removeItem(`star-button-${i}`);
                     console.log(watchListArr);
                 }
                 // Save watchListArr to local storage
@@ -199,20 +209,6 @@ fetch(url)
                     'watchListArr',
                     JSON.stringify(watchListArr)
                 );
-                // Star fill / unfill
-                // Toggle the class of the star button
-                if (starButton.classList.contains('unfilled')) {
-                    starButton.classList.remove('unfilled');
-                    starButton.classList.add('filled');
-                    // Adds the clicked item to local storage
-                    localStorage.setItem(`star-button-${i}`, 'filled');
-                } else {
-                    starButton.classList.remove('filled');
-                    starButton.classList.add('unfilled');
-                    // Bugged
-                    // Remove the clicked item from local storage
-                    localStorage.removeItem(`star-button-${i}`);
-                }
 
                 // Check if the star button is stored in local storage and update its class accordingly
                 if (localStorage.getItem(`star-button-${i}`) === 'filled') {
@@ -277,8 +273,9 @@ fetch(url)
                 coin24hrPercentData.classList.add('coin-24hr-percent-data-div');
                 const coin24hrPercentSpan = document.createElement('span');
                 coin24hrPercentSpan.classList.add('coin-percent-24hr');
-                coin24hrPercentSpan.textContent =
-                    `${data[currentIndex].price_change_percentage_24h.toFixed(2)}\%`;
+                coin24hrPercentSpan.textContent = `${data[
+                    currentIndex
+                ].price_change_percentage_24h.toFixed(2)}\%`;
                 if (
                     data[currentIndex].price_change_percentage_24h.toFixed(2) >
                     0
@@ -322,8 +319,9 @@ fetch(url)
                 coinMktCapDataDiv.classList.add('coin-mkt-cap-data-div');
                 const coinMktCapSpan = document.createElement('span');
                 coinMktCapSpan.classList.add('coin-mkt-cap');
-                coinMktCapSpan.textContent =
-                    `${data[currentIndex].ath_change_percentage.toFixed(2)}\%`;
+                coinMktCapSpan.textContent = `${data[
+                    currentIndex
+                ].ath_change_percentage.toFixed(2)}\%`;
                 if (data[currentIndex].ath_change_percentage.toFixed(2) > 0) {
                     coinMktCapSpan.style.color = 'green';
                 } else {
@@ -383,37 +381,45 @@ fetch(url)
                 row.appendChild(sevenDayChartData);
 
                 // Styling
-                
+
                 const symbols = document.querySelectorAll('.coin-abrv');
                 console.log(symbols);
                 console.log(symbols[currentIndex]);
                 // symbols[currentIndex].style.paddingLeft = '5px';
 
-                const starButton = document.getElementById(`star-button-${currentIndex}`);
+                const starButton = document.getElementById(
+                    `star-button-${currentIndex}`
+                );
                 starButton.addEventListener('click', function (event) {
                     const row = event.target.parentNode.parentNode;
+                    console.log(event.target);
                     console.log(row);
-    
+
                     const arrIndex =
-                        row.getElementsByClassName('coin-number')[0].textContent -
-                        1;
-                    // if its not apart of the watch list 
+                        row.getElementsByClassName('coin-number')[0]
+                            .textContent - 1;
+                    // if its not apart of the watch list
                     if (!watchListArr.includes(arrIndex)) {
                         starButton.classList.remove('unfilled');
                         starButton.classList.add('filled');
                         watchListArr.push(arrIndex);
-                        console.log(watchListArr);
-                    }
-    
-                    if (watchListArr.includes(arrIndex)) {
+                        // console.log(watchListArr);
+                    } else if (watchListArr.includes(arrIndex)) {
                         starButton.classList.remove('filled');
                         starButton.classList.add('unfilled');
                         console.log(watchListArr);
-
+                        let index = watchListArr.indexOf(arrIndex);
+                        watchListArr.splice(index, 1);
+                        console.log(watchListArr);
+                        row.remove();
                         // code snippet here
                     }
-                });    
 
+                    localStorage.setItem(
+                        'watchListArr',
+                        JSON.stringify(watchListArr)
+                    );
+                });
             }
         });
 
