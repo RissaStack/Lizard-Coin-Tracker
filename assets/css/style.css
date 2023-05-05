@@ -505,25 +505,6 @@ footer li {
     font-weight: bolder;
 }
 
-/* These media queries are to make the footer responsive. */
-@media (max-width: 600px) {
-    .footer {
-        width: 25%;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-    .footer {
-        width: 50%;
-    }
-}
-
-@media (min-width: 901px) {
-    .footer {
-        width: 100%;
-    }
-}
-
 /* Spacing for the footer. */
 #footer-title {
     margin-left: 5%;
