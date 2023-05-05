@@ -30,13 +30,25 @@ The Watchlist page of our platform, allowing users to create a personalized list
 Discover the essentials of crypto with our informative Learn page, featuring educational resources and industry analysis to keep you up-to-date.
 ![webpage preview](assets/images/Learnmore-preview.png)
 
+## Technologies used
+
+-   HTML
+-   CSS
+-   JavaScript
+-   Bootstrap
+-   Jquery
+-   Google Fonts
+-   Font Awesome
+-   API 1: Coingecko
+-   API 2: Fear and Greed Index
+
 ## Contributors
 
 I would like to thank the following individuals for their contributions to this project:
 
--   Connor G ([GitHub](https://github.com/connorg45))
--   Larissa S ([GitHub](https://github.com/RissaStack))
--   Ali B ([GitHub](https://github.com/alihumzahbeig))
+-   Connor G ([GitHub](https://github.com/connorg45){:target="_blank"})
+-   Larissa S ([GitHub](https://github.com/RissaStack){:target="_blank"})
+-   Ali B ([GitHub](https://github.com/alihumzahbeig){:target="_blank"})
 
 # Links
 
