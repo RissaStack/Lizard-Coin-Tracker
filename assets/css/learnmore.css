@@ -1,0 +1,66 @@
+#img-wallet {
+    width: 30%;
+    float: left;
+    margin-right: 30px;
+}
+
+.arti-one {
+    overflow: auto;
+    margin: 100px 40px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+#img-graph {
+    width: 30%;
+    float: right;
+    margin-left: 30px;
+}
+
+.arti-two {
+    overflow: auto;
+    margin: 100px 40px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+#img-coins {
+    width: 30%;
+    float: left;
+    margin-right: 30px;
+}
+
+.arti-three {
+    overflow: auto;
+    margin: 100px 40px;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+#NavbackgroundcolorWL {
+    background-color: rgba(121, 56, 149, 0.3);
+}
+
+.foot-names:hover {
+    color: #800080;
+    background-color: lightgray;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.foot-names-socials:hover {
+    color: #800080;
+    background-color: lightgray;
+    cursor: pointer;
+    width: 17px;
+}
+
+.crypto-image {
+    box-shadow: 0px 0px 10px rgba(0, 0, 1, 0.4);
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.crypto-image:hover {
+    transform: scale(1.01);
+}
